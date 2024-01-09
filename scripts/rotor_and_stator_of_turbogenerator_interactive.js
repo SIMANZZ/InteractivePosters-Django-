@@ -24,31 +24,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const modal = document.getElementById('myModal');
-
+    const modal_video = document.getElementById('myModal');
     const icon = svgObject.getElementById("video_obmotka");
-
     const span = document.getElementsByClassName("close")[0];
-
-    const video = modal.querySelector("iframe");
+    const video = modal_video.querySelector("iframe");
 
     icon.onclick = function () {
-        modal.style.display = "inline";
+        modal_video.style.display = "inline";
         video.src = "videos/Производство обмоток статоров турбогенераторов и гидрогенераторов.mp4";
     }
 
     span.onclick = function () {
         // Сбрасываем позицию видео на начало
         video.src = "";
-        modal.style.display = "none";
+        modal_video.style.display = "none";
     }
 
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target == modal_video) {
             // Сбрасываем позицию видео на начало
             video.src = "";
-            modal.style.display = "none";
+            modal_video.style.display = "none";
         }
+    }
+
+    const sheet = svgObject.getElementById("sheet");
+    const modal_text = document.getElementById('ModalText');
+    const span_text = document.getElementByClassName("close_text");
+
+    sheet.onclick = function(){
+        modal_text.style.display = 'inline';
     }
 });
 
