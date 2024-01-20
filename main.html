@@ -16,15 +16,20 @@
     <div class="container-first">
       <div class="text">Интерактивные плакаты, всё об электромашинах</div>
       <button class="button1" id="1">Электрические машины</button>
-      <div class="buttons">
+      <div class="buttons" style="display: none;">
         <button id="2">Машины переменного тока</button>
         <button id="3">Машины постоянного тока</button>
         <button id="4">Общие принципы</button>
       </div>
-    </div>
-    <div class="AsyncAndSync">
-      <button id="5">Асинхронные</button>
-      <button id="6">Синхронные</button>
+      <div class="AsyncAndSync">
+        <div class="buttons" style="display: none;">
+          <button id="5">Асинхронные</button>
+          <button id="6">Синхронные</button>
+          <div class="back">
+            <button id = "back-button">Назад</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container-images" style="display: none;">
       <div class="engine-container"></div>
@@ -33,21 +38,6 @@
       </div>
     </div>
   </div>
-  <!-- <div class="container-images" style="display: none;">
-    <div class="engine-container">
-      <div class="engine-item">
-        <div class="this">
-          <div class="button-container">
-            <button>Общий</button>
-            <button>Интерактив</button>
-            <button>Тест</button>
-          </div>
-          <img src="images/Асинхронный двигатель с короткозамкнутым ротором.jpg">
-        </div>
-        <p>Асинхронный двигатель с короткозамкнутым ротором</p>
-      </div>
-    </div>
-  </div> -->
 </body>
 <script src="scripts/main.js"></script>
 

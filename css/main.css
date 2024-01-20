@@ -182,7 +182,6 @@ button:hover {
 }
 
 .buttons{
-    display: none;
     gap: 5px;
 }
 
@@ -197,6 +196,10 @@ button:hover {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
+}
+
+.buttons .back button{
+    margin-top: 5px;
 }
 
 body {
