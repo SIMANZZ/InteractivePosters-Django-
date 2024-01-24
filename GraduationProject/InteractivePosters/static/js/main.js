@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const GeneralPrincipalsData = [
         {
             name: "Крепление электрических машин",
-            imageSrc: "images/GeneralPrincipals/Крепление электрических машин.jpg",
+            imageSrc: "{% static 'images/Крепление электрических машин.jpg' %}",
         },
         {
             name: "Охлаждение электрических машин",
