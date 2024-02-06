@@ -10,59 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
     let back_button_stage = 0;
 
-    // const ACmachinesData_Sync = [
-    //     {
-    //         name: "Коллекторы",
-    //         imageSrc: "images/ACmachines/Sync/Коллекторы.jpg",
-    //     },
-    //     {
-    //         name: "Ротор и статор турбогенератора",
-    //         imageSrc: "images/ACmachines/Sync/Ротор и статор турбогенератора.jpg",
-    //         imageCommon_adress: "rotor_and_stator_of_turbogenerator_common.html",
-    //         imageInteractive_adress: "rotor_and_stator_of_turbogenerator_interactive.html",
-    //         imageTest_adress: "rotor_and_stator_of_turbogenerator_test.html"
-    //     },
-    //     {
-    //         name: "Ротор синхронного двигателя",
-    //         imageSrc: "images/ACmachines/Sync/Ротор синхронного двигателя.jpg",
-    //     },
-    //     {
-    //         name: "Синхронная машина",
-    //         imageSrc: "images/ACmachines/Sync/Синхронная машина.jpg",
-    //     },
-    //     {
-    //         name: "Синхронный двигатель",
-    //         imageSrc: "images/ACmachines/Sync/Синхронный двигатель.jpg",
-    //     },
-    //     {
-    //         name: "Турбогенератор",
-    //         imageSrc: "images/ACmachines/Sync/Турбогенератор.jpg",
-    //     },
-    // ];
-
-    // const ACmachinesData_Async = [
-    //     {
-    //         name: "Асинхронный двигатель с короткозамкнутым ротором",
-    //         imageSrc: "images/ACmachines/Async/Асинхронный двигатель с короткозамкнутым ротором.jpg",
-    //     },
-    //     {
-    //         name: "Асинхронный двигатель с фазным ротором",
-    //         imageSrc: "images/ACmachines/Async/Асинхронный двигатель с фазным ротором.jpg",
-    //     },
-    //     {
-    //         name: "Короткозамкнутые роторы асинхронного двигателя",
-    //         imageSrc: "images/ACmachines/Async/Короткозамкнутые роторы асинхронного двигателя.jpg",
-    //     },
-    //     {
-    //         name: "Статор асинхронного двигателя",
-    //         imageSrc: "images/ACmachines/Async/Статор асинхронного двигателя.jpg",
-    //     },
-    //     {
-    //         name: "Фазный ротор асинхронного двигателя",
-    //         imageSrc: "images/ACmachines/Async/Фазный ротор асинхронного двигателя.jpg",
-    //     },
-    // ];
-
     if (container) {
         container.addEventListener('click', function (event) {
             let id = event.target.id;

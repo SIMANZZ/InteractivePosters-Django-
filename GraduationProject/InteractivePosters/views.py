@@ -91,9 +91,9 @@ def main(request):
         {
             "name": "Ротор и статор турбогенератора",
             "imageSrc": static('images/ACmachines/Sync/Ротор и статор турбогенератора.jpg'),
-            "imageCommon_adress": 'rotor_and_stator_of_turbogenerator_common.html',
-            "imageInteractive_adress": 'rotor_and_stator_of_turbogenerator_interactive.html',
-            "imageTest_adress": 'rotor_and_stator_of_turbogenerator_test.html'
+            "imageCommon_adress": 'rotor_and_stator_of_turbogenerator_common',
+            "imageInteractive_adress": 'rotor_and_stator_of_turbogenerator_interactive',
+            "imageTest_adress": 'rotor_and_stator_of_turbogenerator_test'
         },
         {
             "name": "Ротор синхронного двигателя",
@@ -171,4 +171,14 @@ def main(request):
 
     return render(request, 'main.html', {'GeneralPrincipalsImagesData': GeneralPrincipalsimages_json,
                                          'DCmachinesImagesData': DCmachinesimages_json,
-                                         'ACmachinesImagesDataAsync': ACmachinesimages_jsonAsync, 'ACmachinesImagesDataSync':ACmachinesimages_jsonSync})
+                                         'ACmachinesImagesDataAsync': ACmachinesimages_jsonAsync,
+                                         'ACmachinesImagesDataSync': ACmachinesimages_jsonSync})
+
+def rotor_and_stator_of_turbogenerator_common(request):
+    return render(request, 'rotor_and_stator_of_turbogenerator_common.html')
+
+def rotor_and_stator_of_turbogenerator_interactive(request):
+    return render(request, 'rotor_and_stator_of_turbogenerator_interactive.html')
+
+def rotor_and_stator_of_turbogenerator_test(request):
+    return render(request,'rotor_and_stator_of_turbogenerator_test.html')

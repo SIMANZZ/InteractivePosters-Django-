@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ротор и статор турбогенератора - интерактивное изображение</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/rotor_and_stator_of_turbogenerator_interactive.css">
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/rotor_and_stator_of_turbogenerator_interactive.css" %}">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 
@@ -16,7 +17,7 @@
             <span class="close">×</span>
             <div class="video-container">
                 <iframe id="video" width="100%" height="100%"
-                    src="videos/Производство обмоток статоров турбогенераторов и гидрогенераторов.mp4" frameborder="0"
+                    src="{{ MEDIA_URL }}videos/Производство обмоток статоров турбогенераторов и гидрогенераторов.mp4" frameborder="0"
                     allowfullscreen></iframe>
             </div>
         </div>
@@ -1542,6 +1543,6 @@
         </g>
     </svg>
 </body>
-<script src="scripts/rotor_and_stator_of_turbogenerator_interactive.js"></script>
+<script src="{% static "js/rotor_and_stator_of_turbogenerator_interactive.js" %}"></script>
 
 </html>
