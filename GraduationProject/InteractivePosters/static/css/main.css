@@ -154,8 +154,12 @@ button{
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
     background-color: #ff6600;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 
 .text {
@@ -169,6 +173,7 @@ button:hover {
         -1px 1px 0 black,
         1px 1px 0 black;
     /* Отрицательные и положительные значения создают обводку */
+    min-width: 1800px;
 }
 
 .container-first {
@@ -177,11 +182,14 @@ button:hover {
     justify-content: center;
     gap: 15px;
     align-items: center;
+    text-align: center;
     height: 100vh;
-    margin: 0;
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .buttons{
+    display: flex;
     gap: 5px;
 }
 
@@ -190,18 +198,15 @@ button:hover {
     width: 350px;
 }
 
-.buttons button:hover{
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-}
-
 .buttons .back button{
     margin-top: 5px;
 }
 
+.AsyncAndSync{
+    width: 100%;
+    float: left;
+}
+
 body {
-    overflow: hidden; /* Убираем как вертикальный, так и горизонтальный скроллбары */
+    overflow: hidden;
 }
