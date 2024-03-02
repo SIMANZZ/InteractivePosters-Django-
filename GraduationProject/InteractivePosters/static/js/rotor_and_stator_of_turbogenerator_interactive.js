@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openModal(modalId) {
         if(modalId == "videoObmotka"){
-            video.src = "videos/Производство обмоток статоров турбогенераторов и гидрогенераторов.mp4";
+            video.src = videoUrl;
         }
         else if(modalId == "obmotkaText"){
             const modalObject = document.getElementById('obmotkaText');

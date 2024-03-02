@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector(".container");
     const container_first = document.querySelector('.container-first');
     const container_images = document.querySelector('.container-images');
-    const async_and_sync = document.querySelector('.AsyncAndSync');
-    const engine_container = document.querySelector('.engine-container');
-    const back = document.querySelector('.back');
 
     let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
     let back_button_stage = 0;
@@ -62,47 +59,89 @@ document.addEventListener('DOMContentLoaded', () => {
                 container_first.style.display = 'flex';
                 container_first.querySelectorAll('.buttons')[1].style.display = 'flex';
             }
+            else if (id.startsWith('knowledge-control')) {
+                const parentContainer = document.getElementById(id).parentNode;
+                console.log(parentContainer);
+                const forms = parentContainer.querySelectorAll('form');
+
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].style.display = 'none';
+                }
+
+                parentContainer.querySelectorAll('button')[2].style.display = 'none';
+
+                let AllData;
+
+                const formsData = [
+                    { buttonText: "Тренировка", action: data.trainingButton_adress },
+                    { buttonText: "Контроль", action: data.examButton_adress },
+                ];
+
+                formsData.forEach(({ buttonText, action }) => {
+                    const form = document.createElement("form");
+                    form.action = action;
+
+                    const button = document.createElement("button");
+                    button.textContent = buttonText;
+
+                    form.appendChild(button);
+                    buttonContainer.appendChild(form);
+                });
+                // forms[2].style.display = 'none';
+                // forms[0].getElementsByTagName('button')[0].textContent = 'Тренировка';
+                // forms[1].getElementsByTagName('button')[0].textContent = 'Контроль';
+            }
         })
     }
+
+    let counter = 0;
 
     function createEngineItem(data) {
         const engineItem = document.createElement("div");
         engineItem.classList.add("engine-item");
-    
+
         const innerContainer = document.createElement("div");
         innerContainer.classList.add("this");
-    
+
         const buttonContainer = document.createElement("div");
         buttonContainer.classList.add("button-container");
-    
+        buttonContainer.id = counter;
+
         const formsData = [
-            { buttonText: "Общий", action: data.imageCommon_adress },
-            { buttonText: "Интерактив", action: data.imageInteractive_adress },
-            { buttonText: "Тест", action: data.imageTest_adress }
+            { buttonText: "Общий вид", action: data.imageCommon_adress },
+            { buttonText: "Интерактивный плакат", action: data.imageInteractive_adress },
+            { buttonText: "Контроль знаний", action: '' }
         ];
-    
+
         formsData.forEach(({ buttonText, action }) => {
             const form = document.createElement("form");
             form.action = action;
-    
+
             const button = document.createElement("button");
             button.textContent = buttonText;
-    
-            form.appendChild(button);
-            buttonContainer.appendChild(form);
+            if (buttonText == "Контроль знаний") {
+                button.id = 'knowledge-control' + counter;
+                buttonContainer.appendChild(button);
+            }
+            else{
+                form.appendChild(button);
+                buttonContainer.appendChild(form);
+            }
         });
-    
+
+        counter++;
+
         const image = document.createElement("img");
         image.src = data.imageSrc;
-    
+
         const paragraph = document.createElement("p");
         paragraph.textContent = data.name;
-    
+
         innerContainer.appendChild(buttonContainer);
         innerContainer.appendChild(image);
         engineItem.appendChild(innerContainer);
         engineItem.appendChild(paragraph);
-    
+
         return engineItem;
     }
 
