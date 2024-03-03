@@ -16,6 +16,25 @@
     const DCmachinesData = {{ DCmachinesImagesData|safe }};
     const ACmachinesData_Async = {{ ACmachinesImagesDataAsync|safe }};
     const ACmachinesData_Sync = {{ ACmachinesImagesDataSync|safe }};
+
+    // Проходимся по массиву и заменяем {{ MEDIA_URL }} на фактический MEDIA_URL
+    GeneralPrincipalsData.forEach(item => {
+      item.imageSrc = "{{ MEDIA_URL }}" + item.imageSrc;;
+    });
+
+    DCmachinesData.forEach(item => {
+      item.imageSrc = "{{ MEDIA_URL }}" + item.imageSrc;;
+    });
+
+    ACmachinesData_Async.forEach(item => {
+      item.imageSrc = "{{ MEDIA_URL }}" + item.imageSrc;;
+    });
+
+    ACmachinesData_Sync.forEach(item => {
+      item.imageSrc = "{{ MEDIA_URL }}" + item.imageSrc;;
+    });
+
+    console.log(GeneralPrincipalsData);
   </script>
 
   <title>Document</title>

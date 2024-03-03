@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
     let back_button_stage = 0;
+    let testData;
 
     if (container) {
         container.addEventListener('click', function (event) {
@@ -70,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 parentContainer.querySelectorAll('button')[2].style.display = 'none';
 
-                let AllData;
+                console.log(testData.trainingButton_adress);
 
                 const formsData = [
-                    { buttonText: "Тренировка", action: data.trainingButton_adress },
-                    { buttonText: "Контроль", action: data.examButton_adress },
+                    { buttonText: "Тренировка", action: testData.trainingButton_adress },
+                    { buttonText: "Контроль", action: testData.examButton_adress },
                 ];
 
                 formsData.forEach(({ buttonText, action }) => {
@@ -85,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     button.textContent = buttonText;
 
                     form.appendChild(button);
-                    buttonContainer.appendChild(form);
+                    parentContainer.appendChild(form);
                 });
                 // forms[2].style.display = 'none';
                 // forms[0].getElementsByTagName('button')[0].textContent = 'Тренировка';
@@ -161,24 +162,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (Flags[3]) {
             GeneralPrincipalsData.map((engineData) => {
+                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
         else if (Flags[2]) {
             DCmachinesData.map((engineData) => {
+                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
         else if (Flags[1]) {
             ACmachinesData_Async.map((engineData) => {
+                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
         else if (Flags[0]) {
             ACmachinesData_Sync.map((engineData) => {
+                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
