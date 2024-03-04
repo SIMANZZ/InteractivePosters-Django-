@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
     let back_button_stage = 0;
-    let testData;
 
     if (container) {
         container.addEventListener('click', function (event) {
@@ -71,12 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 parentContainer.querySelectorAll('button')[2].style.display = 'none';
 
-                console.log(testData.trainingButton_adress);
+                console.log(ACmachinesData_Sync);
 
                 const formsData = [
-                    { buttonText: "Тренировка", action: testData.trainingButton_adress },
-                    { buttonText: "Контроль", action: testData.examButton_adress },
+                    { buttonText: "Тренировка", action: ACmachinesData_Sync[1].trainingButton_adress },
+                    { buttonText: "Контроль", action: ACmachinesData_Sync[1].examButton_adress },
                 ];
+                console.log(formsData);
 
                 formsData.forEach(({ buttonText, action }) => {
                     const form = document.createElement("form");
@@ -162,28 +162,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (Flags[3]) {
             GeneralPrincipalsData.map((engineData) => {
-                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
         else if (Flags[2]) {
             DCmachinesData.map((engineData) => {
-                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
         else if (Flags[1]) {
             ACmachinesData_Async.map((engineData) => {
-                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
         else if (Flags[0]) {
             ACmachinesData_Sync.map((engineData) => {
-                testData = engineData;
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
