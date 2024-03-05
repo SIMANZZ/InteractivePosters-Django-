@@ -1,5 +1,4 @@
 from django.urls import path
-# from .views import main, rotor_and_stator_of_turbogenerator_common, rotor_and_stator_of_turbogenerator_interactive, rotor_and_stator_of_turbogenerator_test
 from .views import *
 from django.conf import settings
 from django.conf.urls.static import static
