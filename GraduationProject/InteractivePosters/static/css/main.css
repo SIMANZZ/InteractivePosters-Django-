@@ -49,7 +49,7 @@ button{
 }
 
 .this button{
-    background-color: rgb(0, 204, 255);
+    background-color: red;
     color: white;
     border: 0;
     left: 50%;
@@ -68,7 +68,7 @@ button{
 
 .this button:hover {
     transform: scale(1.1);
-    background-color: #ff6600;
+    background-color: #ff6363;
 }
 
 .container-images{
@@ -110,7 +110,7 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 500px;
-    background-color: rgb(0, 204, 255);
+    background-color: red;
     color: white;
     border: 0;
     left: 50%;
@@ -135,7 +135,7 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 300px;
-    background-color: rgb(0, 204, 255);
+    background-color: red;
     color: white;
     border: 0;
     left: 50%;
@@ -155,7 +155,7 @@ button{
 
 button:hover {
     transform: scale(0.9);
-    background-color: #ff6600;
+    background-color: #ff6363;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -166,12 +166,12 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: 700;
-    color: rgb(68, 193, 255);
+    color: red;
     text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
+        -0.3px -0.3px 0 black,
+        0.3px -0.3px 0 black,
+        -0.3px 0.3px 0 black,
+        0.3px 0.3px 0 black;
     /* Отрицательные и положительные значения создают обводку */
     min-width: 1800px;
 }
@@ -205,6 +205,35 @@ button:hover {
 .AsyncAndSync{
     width: 100%;
     float: left;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    z-index: 2001;
+}
+
+.navbar button{
+    font-size: 24px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.navbar button:hover{
+    transform: scale(0.9);
+    background-color: #ff6363;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 
 body {
