@@ -9,24 +9,32 @@ def main(request):
             "imageSrc": 'images/GeneralPrincipals/Крепление электрических машин.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Охлаждение электрических машин",
             "imageSrc": 'images/GeneralPrincipals/Охлаждение электрических машин.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Преобразование энергии в электрическом генераторе",
             "imageSrc": 'images/GeneralPrincipals/Преобразование энергии в электрическом генераторе.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Преобразование энергии в электродвигателе",
             "imageSrc": 'images/GeneralPrincipals/Преобразование энергии в электродвигателе.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
     ]
 
@@ -36,36 +44,48 @@ def main(request):
             "imageSrc": 'images/DCmachines/Двигатель постоянного тока.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Индуктор машины постоянного тока",
             "imageSrc": 'images/DCmachines/Индуктор машины постоянного тока.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Коммутация якоря",
             "imageSrc": 'images/DCmachines/Коммутация якоря.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Реакция якоря",
             "imageSrc": 'images/DCmachines/Реакция якоря.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "ЭДС, электромагнитный момент",
             "imageSrc": 'images/DCmachines/ЭДС, электромагнитный момент.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Якорь машины постоянного тока",
             "imageSrc": 'images/DCmachines/Якорь машины постоянного тока.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
     ]
 
@@ -75,7 +95,8 @@ def main(request):
             "imageSrc": 'images/ACmachines/Sync/Коллекторы.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
-
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Ротор и статор турбогенератора",
@@ -90,24 +111,32 @@ def main(request):
             "imageSrc": 'images/ACmachines/Sync/Ротор синхронного двигателя.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Синхронная машина",
             "imageSrc": 'images/ACmachines/Sync/Синхронная машина.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Синхронный двигатель",
             "imageSrc": 'images/ACmachines/Sync/Синхронный двигатель.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Турбогенератор",
             "imageSrc": 'images/ACmachines/Sync/Турбогенератор.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
     ]
 
@@ -117,30 +146,40 @@ def main(request):
             "imageSrc": 'images/ACmachines/Async/Асинхронный двигатель с короткозамкнутым ротором.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Асинхронный двигатель с фазным ротором",
             "imageSrc": 'images/ACmachines/Async/Асинхронный двигатель с фазным ротором.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Короткозамкнутые роторы асинхронного двигателя",
             "imageSrc": 'images/ACmachines/Async/Короткозамкнутые роторы асинхронного двигателя.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Статор асинхронного двигателя",
             "imageSrc": 'images/ACmachines/Async/Статор асинхронного двигателя.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
         {
             "name": "Фазный ротор асинхронного двигателя",
             "imageSrc": 'images/ACmachines/Async/Фазный ротор асинхронного двигателя.jpg',
             "imageCommon_adress": "none",
             "imageInteractive_adress": "none",
+            "trainingButton_adress": 'none',
+            "examButton_adress": 'none'
         },
     ]
 

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector(".container");
     const container_first = document.querySelector('.container-first');
     const container_images = document.querySelector('.container-images');
+    const container_navbar = document.querySelector('.navbar');
 
     let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
     let back_button_stage = 0;
@@ -16,30 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             else if (id == '4') {
                 back_button_stage = 0;
-                container_first.style.display = 'none';
-                container_images.style.display = 'block';
+                ImagesActive();
                 Flags[0] = false, Flags[1] = false, Flags[2] = false, Flags[3] = true;
                 console.log(Flags);
                 ShowImagesByFlags(Flags);
             }
             else if (id == '3') {
                 back_button_stage = 0;
-                container_first.style.display = 'none';
-                container_images.style.display = 'block';
+                ImagesActive();
                 Flags[2] = true, Flags[0] = false, Flags[1] = false, Flags[3] = false;
                 ShowImagesByFlags(Flags);
             }
             else if (id == '5') {
                 back_button_stage = 2;
-                container_first.style.display = 'none';
-                container_images.style.display = 'block';
+                ImagesActive();
                 Flags[1] = true, Flags[0] = false, Flags[2] = false, Flags[3] = false;
                 ShowImagesByFlags(Flags);
             }
             else if (id == '6') {
                 back_button_stage = 2;
-                container_first.style.display = 'none';
-                container_images.style.display = 'block';
+                ImagesActive();
                 Flags[0] = true, Flags[1] = false, Flags[2] = false, Flags[3] = false;
                 ShowImagesByFlags(Flags);
             }
@@ -52,12 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(id);
                 container_images.style.display = 'none';
                 container_first.style.display = 'flex';
+                container_navbar.style.display = 'flex';
             }
             else if (id == "back-button" && back_button_stage == 2) {
                 back_button_stage = 1;
                 container_images.style.display = 'none';
                 container_first.style.display = 'flex';
                 container_first.querySelectorAll('.buttons')[1].style.display = 'flex';
+                container_navbar.style.display = 'flex';
             }
             else if (id.startsWith('knowledge-control')) {
                 const parentContainer = document.getElementById(id).parentNode;
@@ -67,32 +66,55 @@ document.addEventListener('DOMContentLoaded', () => {
                 for (var i = 0; i < forms.length; i++) {
                     forms[i].style.display = 'none';
                 }
-
                 parentContainer.querySelectorAll('button')[2].style.display = 'none';
 
-                console.log(ACmachinesData_Sync);
+                controlButtons = document.getElementById(id).name.split('|');
+                console.log(controlButtons);
 
                 const formsData = [
-                    { buttonText: "Тренировка", action: ACmachinesData_Sync[1].trainingButton_adress },
-                    { buttonText: "Контроль", action: ACmachinesData_Sync[1].examButton_adress },
+                    { buttonText: "Тренировка", action: controlButtons[0] },
+                    { buttonText: "Контроль", action: controlButtons[1] },
+                    { buttonText: "Назад", action: ''},
                 ];
                 console.log(formsData);
 
+                let knowledgeID = extractNumber(id);
+
+                const examContainer = document.createElement("div");
+                examContainer.classList.add("exam-container");
+                examContainer.id = knowledgeID;
+
                 formsData.forEach(({ buttonText, action }) => {
+
                     const form = document.createElement("form");
                     form.action = action;
 
                     const button = document.createElement("button");
                     button.textContent = buttonText;
 
-                    form.appendChild(button);
-                    parentContainer.appendChild(form);
+                    if(buttonText == "Назад"){
+                        button.id = "backButton" + knowledgeID;
+                        console.log(knowledgeID);
+                        examContainer.appendChild(button);
+                    }
+                    else{
+                        form.appendChild(button);
+                        examContainer.appendChild(form);
+                    }
                 });
-                // forms[2].style.display = 'none';
-                // forms[0].getElementsByTagName('button')[0].textContent = 'Тренировка';
-                // forms[1].getElementsByTagName('button')[0].textContent = 'Контроль';
+                parentContainer.appendChild(examContainer);
             }
-        })
+            else if(id.startsWith("backButton")){
+                const parentContainer = document.getElementById(id).parentNode.parentNode;
+                console.log(parentContainer);
+                const forms = parentContainer.querySelectorAll('form');
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].style.display = 'flex';
+                }
+                parentContainer.querySelectorAll('button')[2].style.display = 'flex';
+                const examContainer = document.getElementById(id).parentNode.remove();
+            }
+        });
     }
 
     let counter = 0;
@@ -122,9 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
             button.textContent = buttonText;
             if (buttonText == "Контроль знаний") {
                 button.id = 'knowledge-control' + counter;
+                button.name = data.trainingButton_adress + '|' + data.examButton_adress;
                 buttonContainer.appendChild(button);
             }
-            else{
+            else {
                 form.appendChild(button);
                 buttonContainer.appendChild(form);
             }
@@ -184,5 +207,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 engineContainer.appendChild(engineItem);
             });
         }
+    }
+
+    function ImagesActive() {
+        container_first.style.display = 'none';
+        container_navbar.style.display = 'none';
+        container_images.style.display = 'block';
+    }
+
+    function extractNumber(str) {
+        // Используем регулярное выражение для поиска числа в строке
+        var match = str.match(/\d+/);
+        // Если число найдено, возвращаем его, иначе возвращаем null
+        return match ? parseInt(match[0]) : null;
     }
 });

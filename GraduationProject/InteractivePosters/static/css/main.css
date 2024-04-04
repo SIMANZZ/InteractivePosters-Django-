@@ -12,6 +12,16 @@
     -o-transition: opacity 0.3s ease;
 }
 
+p{
+    color: red;
+    text-shadow:
+        -0.3px -0.3px 0 black,
+        0.3px -0.3px 0 black,
+        -0.3px 0.3px 0 black,
+        0.3px 0.3px 0 black;
+    font-size: 21pt;
+}
+
 .this:hover img{
     opacity: 0.7;
 }
@@ -36,6 +46,21 @@
     -o-transform: translate(-50%,-50%);
     z-index: 2001;
     opacity: 0;
+}
+
+.exam-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    z-index: 2001;
 }
 
 .this:hover .button-container{
@@ -200,6 +225,7 @@ button:hover {
 
 .buttons .back button{
     margin-top: 5px;
+    
 }
 
 .AsyncAndSync{
