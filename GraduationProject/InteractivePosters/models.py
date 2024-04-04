@@ -1,7 +1,7 @@
 from django.db import models
 
 class Machines(models.Model):
-    machine_name = models.CharField(max_length=35, blank=False)
+    machine_name = models.CharField(max_length=100, blank=False)
 
     def __str__(self):
         return self.machine_name

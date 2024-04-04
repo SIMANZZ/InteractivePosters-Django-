@@ -5,20 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ротор и статор турбогенератора - интерактивное изображение</title>
+    <title>Ротор и статор турбогенератора - режим тренировки</title>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 
 <body>
-    <div id="Answer" class="modal">
-        <div class="modal-content">
-            <span class="close">×</span>
-            <div class="answer-container">
-                <input type="text" id="input_answer">
-            </div>
-        </div>
-    </div>
     <svg id="svgObject" version="1.1" width="100%" height="100%" viewBox="0 0 1920 1364" sodipodi:docname="source.svg"
         inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1530,6 +1522,8 @@
         </g>
     </svg>
 </body>
-<!-- <script src="{% static "js/rotor_and_stator_of_turbogenerator_test.js" %}"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static "js/rotor_and_stator_of_turbogenerator_test.js" %}"></script>
 
 </html>

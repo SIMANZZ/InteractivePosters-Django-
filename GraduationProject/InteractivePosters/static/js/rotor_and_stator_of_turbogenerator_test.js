@@ -11,17 +11,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 svgObject.getElementById(id).style.cursor = 'pointer';
             }
         });
-        svgObject.addEventListener('click', function (event) {
+        $(svgObject).click(function (event) {
             let id = event.target.id;
-            console.log(id)
-            var answer = prompt("Введите ответ: ");
-            if(Compare(answer, id)){
-                svgObject.getElementById(id).style.opacity = '0.6';
-                svgObject.getElementById(id).style.fill = 'green';
+            if(id > 0 && id < 22){
+                var answer = prompt("Введите ответ:");
+                if (answer !== null && answer !== "") {
+                    $.ajax({
+                        type: "POST",
+                        url: "/check_answer/", // Замените на URL вашего представления Django
+                        headers: { "X-CSRFToken": "{{ csrf_token }}" },
+                        data: {
+                            'machine_name': "Ротор и статор турбогенератора",
+                            'question_number': id+1, // Замените questionNumber на номер вопроса
+                            'answer': answer
+                        },
+                        success: function(response) {
+                            // Обработка успешного ответа от сервера
+                            alert(JSON.stringify(response));
+                        }
+                    });
+                }
             }
-            else{
-                svgObject.getElementById(id).style.fill = 'red';
-            }
+        });
+            // let id = event.target.id;
+            // console.log(id)
+            // var answer = prompt("Введите ответ: ");
+            // if(Compare(answer, id)){
+            //     svgObject.getElementById(id).style.opacity = '0.6';
+            //     svgObject.getElementById(id).style.fill = 'green';
+            // }
+            // else{
+            //     svgObject.getElementById(id).style.fill = 'red';
+            // }
             // if (id > 0 && id < 22) {
             //     var answer = prompt("Введите ответ: ");
             //     arr.push(answer);
@@ -47,24 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
             //         }
             //     }
             // }
-        });
     }
 });
-
-// function Comparison(arr){
-//     let AnswersArray = ["контактные кольца"];
-//     let ResultsArray = [];
-//     for(i = 0; i < arr.length; i++){
-//         if(arr[i].toLowerCase() == AnswersArray[i]){
-//             ResultsArray[i] = true;
-//         }
-//         else{
-//             ResultsArray[i] = false;
-//         }
-//         console.log(ResultsArray);
-//     }
-//     return ResultsArray;
-// }
 
 function Compare(answer, id){
     let AnswersArray = ["контактные кольца"];

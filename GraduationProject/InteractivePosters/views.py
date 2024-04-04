@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
+from .models import Answers, Machines
 import json
 
 
@@ -195,12 +198,27 @@ def main(request):
                                          'ACmachinesImagesDataSync': ACmachinesimages_jsonSync})
 
 
-def rotor_and_stator_of_turbogenerator_common(request):
-    return render(request, 'rotor_and_stator_of_turbogenerator_common.html')
+def machines_render(request, machine_name):
+    return render(request, machine_name + '.html')
 
+@csrf_exempt
+def check_answer(request):
+    if request.method == 'POST':
+        machine_name = request.POST.get('machine_name', None)
+        question_number = request.POST.get('question_number', None)
+        answer = request.POST.get('answer', None)
 
-def rotor_and_stator_of_turbogenerator_interactive(request):
-    return render(request, 'rotor_and_stator_of_turbogenerator_interactive.html')
-
-def rotor_and_stator_of_turbogenerator_test(request):
-    return render(request, 'rotor_and_stator_of_turbogenerator_test.html')
+        if machine_name is not None and question_number is not None and answer is not None:
+            machine = get_object_or_404(Machines, machine_name=machine_name)
+            answers = Answers.objects.filter(machinesID=machine)
+            # Далее ваша логика сравнения ответа и т.д.
+            # Например:
+            if machine is not None:
+                # Сравните ответ и т.д.
+                return JsonResponse({'message': 'success'}, status=200)
+            else:
+                return JsonResponse({'message': 'Machine not found'}, status=404)
+        else:
+            return JsonResponse({'message': 'Missing parameters'}, status=400)
+    else:
+        return JsonResponse({'message': 'Method not allowed'}, status=405)
