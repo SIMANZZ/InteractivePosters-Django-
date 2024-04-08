@@ -1,3 +1,5 @@
+import {Flags} from './flags.js'
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const container = document.querySelector(".container");
@@ -5,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const container_images = document.querySelector('.container-images');
     const container_navbar = document.querySelector('.navbar');
 
-    let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
+    // let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
+    console.log(Flags);
     let back_button_stage = 0;
 
     if (container) {
@@ -18,27 +21,39 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (id == '4') {
                 back_button_stage = 0;
                 ImagesActive();
-                Flags[0] = false, Flags[1] = false, Flags[2] = false, Flags[3] = true;
-                console.log(Flags);
-                ShowImagesByFlags(Flags);
+                Flags.ACmachines_Sync = false;
+                Flags.ACmachines_Async = false;
+                Flags.DCmachines = false;
+                Flags.GeneralPrincipals = true;
+                setTimeout(ShowImagesByFlags, 0);
             }
             else if (id == '3') {
                 back_button_stage = 0;
                 ImagesActive();
-                Flags[2] = true, Flags[0] = false, Flags[1] = false, Flags[3] = false;
-                ShowImagesByFlags(Flags);
+                Flags.ACmachines_Sync = false;
+                Flags.ACmachines_Async = false;
+                Flags.DCmachines = true;
+                Flags.GeneralPrincipals = false;
+                setTimeout(ShowImagesByFlags, 0);
             }
             else if (id == '5') {
                 back_button_stage = 2;
                 ImagesActive();
-                Flags[1] = true, Flags[0] = false, Flags[2] = false, Flags[3] = false;
-                ShowImagesByFlags(Flags);
+                Flags.ACmachines_Sync = false;
+                Flags.ACmachines_Async = true;
+                Flags.DCmachines = false;
+                Flags.GeneralPrincipals = false;
+                setTimeout(ShowImagesByFlags, 0);
             }
             else if (id == '6') {
                 back_button_stage = 2;
                 ImagesActive();
-                Flags[0] = true, Flags[1] = false, Flags[2] = false, Flags[3] = false;
-                ShowImagesByFlags(Flags);
+                Flags.ACmachines_Sync = true;
+                Flags.ACmachines_Async = false;
+                Flags.DCmachines = false;
+                Flags.GeneralPrincipals = false;
+                console.log('Флаги после обновления:', Flags);
+                setTimeout(ShowImagesByFlags, 0);
             }
             else if (id == '2') {
                 back_button_stage = 1;
@@ -178,30 +193,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function ShowImagesByFlags(Flags) {
+    function ShowImagesByFlags() {
+        console.log(Flags);
         const engineContainer = document.querySelector(".engine-container");
 
         deleteEngineItem();
 
-        if (Flags[3]) {
+        if (Flags.GeneralPrincipals) {
             GeneralPrincipalsData.map((engineData) => {
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
-        else if (Flags[2]) {
+        else if (Flags.DCmachines) {
             DCmachinesData.map((engineData) => {
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
-        else if (Flags[1]) {
+        else if (Flags.ACmachines_Async) {
             ACmachinesData_Async.map((engineData) => {
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);
             });
         }
-        else if (Flags[0]) {
+        else if (Flags.ACmachines_Sync) {
             ACmachinesData_Sync.map((engineData) => {
                 const engineItem = createEngineItem(engineData);
                 engineContainer.appendChild(engineItem);

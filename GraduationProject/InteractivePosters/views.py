@@ -213,11 +213,14 @@ def check_answer(request):
             answers = Answers.objects.filter(machinesID=machine)
             # Далее ваша логика сравнения ответа и т.д.
             # Например:
-            if machine is not None:
-                # Сравните ответ и т.д.
-                return JsonResponse({'message': 'success'}, status=200)
-            else:
-                return JsonResponse({'message': 'Machine not found'}, status=404)
+            try:
+                answer_obj = answers[int(question_number) - 1]
+                if answer_obj.correct_answer == answer:
+                    return JsonResponse({'message': 'success'}, status=200)
+                else:
+                    return JsonResponse({'message': 'failed'}, status=200)
+            except (IndexError, ValueError):
+                return JsonResponse({'message': 'Invalid question number'}, status=400)
         else:
             return JsonResponse({'message': 'Missing parameters'}, status=400)
     else:
