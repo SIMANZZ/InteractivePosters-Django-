@@ -1,4 +1,4 @@
-import './flags'
+import {flags} from './flags.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     //Обращение к SVG изображению
