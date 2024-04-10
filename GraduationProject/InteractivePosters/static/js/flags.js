@@ -4,6 +4,8 @@ class Flags {
         this.ACmachines_Async = false;
         this.DCmachines = false;
         this.GeneralPrincipals = false;
+        this.training = false;
+        this.control = false;
     }
 
     setACmachines_Sync(value) {
@@ -35,6 +37,23 @@ class Flags {
 
     getGeneralPrincipals() {
         return this.GeneralPrincipals;
+    }
+
+    setTraining(value){
+        this.training = value;
+    }
+
+    setControl(value){
+        this.control = value;
+    }
+    
+    getMode(){
+        if(this.training){
+            return this.training;
+        }
+        else{
+            return this.control+"всмысле";
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-import {flags} from './flags.js';
+import { flags } from './flags.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -73,6 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 container_first.querySelectorAll('.buttons')[1].style.display = 'flex';
                 container_navbar.style.display = 'flex';
             }
+            else if(id == "training"){
+                console.log("тренировочка");
+                flags.setTraining(true);
+            }
             else if (id.startsWith('knowledge-control')) {
                 const parentContainer = document.getElementById(id).parentNode;
                 console.log(parentContainer);
@@ -113,6 +117,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         examContainer.appendChild(button);
                     }
                     else {
+                        switch(buttonText){
+                            case "Тренировка":
+                                button.id = "training";
+                                break;
+                            case "Контроль":
+                                button.id = "control";
+                                break;
+                        }
                         form.appendChild(button);
                         examContainer.appendChild(form);
                     }
@@ -127,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     forms[i].style.display = 'flex';
                 }
                 parentContainer.querySelectorAll('button')[2].style.display = 'flex';
-                const examContainer = document.getElementById(id).parentNode.remove();
+                document.getElementById(id).parentNode.remove();
             }
         });
     }

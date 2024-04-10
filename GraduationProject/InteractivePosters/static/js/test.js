@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //Обращение к SVG изображению
     const svgObject = document.getElementById('svgObject');
 
+    flags.setTraining(true);
+    console.log(flags.getMode());
+
     if (svgObject) {
         svgObject.addEventListener('mouseover', function (event) {
             let id = event.target.id;

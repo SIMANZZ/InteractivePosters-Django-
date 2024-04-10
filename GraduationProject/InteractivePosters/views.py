@@ -207,6 +207,7 @@ def check_answer(request):
         machine_name = request.POST.get('machine_name', None)
         question_number = request.POST.get('question_number', None)
         answer = request.POST.get('answer', None)
+        mode = request.POST.get('mode', None)
 
         if machine_name is not None and question_number is not None and answer is not None:
             machine = get_object_or_404(Machines, machine_name=machine_name)
