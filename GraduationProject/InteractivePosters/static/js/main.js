@@ -1,4 +1,46 @@
-import { flags } from './flags.js';
+class Flags {
+    constructor() {
+        this.ACmachines_Sync = false;
+        this.ACmachines_Async = false;
+        this.DCmachines = false;
+        this.GeneralPrincipals = false;
+        this.training = false;
+        this.control = false;
+    }
+
+    setACmachines_Sync(value) {
+        this.ACmachines_Sync = value;
+    }
+
+    setACmachines_Async(value) {
+        this.ACmachines_Async = value;
+    }
+
+    setDCmachines(value) {
+        this.DCmachines = value;
+    }
+
+    setGeneralPrincipals(value) {
+        this.GeneralPrincipals = value;
+    }
+
+    getACmachines_Sync() {
+        return this.ACmachines_Sync;
+    }
+
+    getACmachines_Async() {
+        return this.ACmachines_Async;
+    }
+    getDCmachines() {
+        return this.DCmachines;
+    }
+
+    getGeneralPrincipals() {
+        return this.GeneralPrincipals;
+    }
+}
+
+let flags = new Flags();
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -7,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const container_images = document.querySelector('.container-images');
     const container_navbar = document.querySelector('.navbar');
 
-    // let Flags = [ACmachines_Sync = false, ACmachines_Async = false, DCmachines = false, GeneralPrincipals = false];
     console.log(flags);
     let back_button_stage = 0;
 
@@ -73,9 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 container_first.querySelectorAll('.buttons')[1].style.display = 'flex';
                 container_navbar.style.display = 'flex';
             }
-            else if(id == "training"){
-                console.log("тренировочка");
-                flags.setTraining(true);
+            else if (id == "training") {
+                setMode("training");
+            }
+            else if (id == "control") {
+                setMode("control");
+            }
+            else if (id.startsWith("common_button")) {
+                localStorage.setItem('image_src', id.split('|')[1]);
             }
             else if (id.startsWith('knowledge-control')) {
                 const parentContainer = document.getElementById(id).parentNode;
@@ -117,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         examContainer.appendChild(button);
                     }
                     else {
-                        switch(buttonText){
+                        switch (buttonText) {
                             case "Тренировка":
                                 button.id = "training";
                                 break;
@@ -158,7 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
         buttonContainer.id = counter;
 
         const formsData = [
-            { buttonText: "Общий вид", action: data.imageCommon_adress },
+            // { buttonText: "Общий вид", action: data.imageCommon_adress },
+            { buttonText: "Общий вид", action: '/common/' },
             { buttonText: "Интерактивный плакат", action: data.imageInteractive_adress },
             { buttonText: "Контроль знаний", action: '' }
         ];
@@ -173,6 +220,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.id = 'knowledge-control' + counter;
                 button.name = data.trainingButton_adress + '|' + data.examButton_adress;
                 buttonContainer.appendChild(button);
+            }
+            else if (buttonText == "Общий вид") {
+                button.id = 'common_button|'+data.imageSrc;
+                form.appendChild(button);
+                buttonContainer.appendChild(form);
             }
             else {
                 form.appendChild(button);
@@ -248,5 +300,9 @@ document.addEventListener('DOMContentLoaded', () => {
         var match = str.match(/\d+/);
         // Если число найдено, возвращаем его, иначе возвращаем null
         return match ? parseInt(match[0]) : null;
+    }
+
+    function setMode(value) {
+        localStorage.setItem('mode', value);
     }
 });

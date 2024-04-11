@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static " css/style.css" %}">
+    <title>Ротор и статор турбогенератора - общий вид</title>
+</head>
+
+<body>
+    <img src="" alt="" width="100%" height="100%">
+</body>
+
+<script>
+    let url_of_image = localStorage.getItem('image_src');
+    console.log(url_of_image);
+    let imgObject = document.querySelector("img");
+    console.log(imgObject);
+    imgObject.src = url_of_image.replace("/media/", "{{ MEDIA_URL }}");
+    console.log(imgObject);
+    // Используем регулярное выражение для поиска имени файла
+    var filename = url_of_image.match(/[^\/]+(?=\.\w+$)/)[0];
+    console.log(filename);
+    document.title = filename + " - общий вид";
+</script>
+
+</html>

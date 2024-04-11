@@ -107,7 +107,7 @@ def main(request):
             "imageCommon_adress": 'rotor_and_stator_of_turbogenerator_common',
             "imageInteractive_adress": 'rotor_and_stator_of_turbogenerator_interactive',
             "trainingButton_adress": 'rotor_and_stator_of_turbogenerator_test',
-            "examButton_adress": 'none',
+            "examButton_adress": 'rotor_and_stator_of_turbogenerator_test',
         },
         {
             "name": "Ротор синхронного двигателя",
@@ -200,6 +200,9 @@ def main(request):
 
 def machines_render(request, machine_name):
     return render(request, machine_name + '.html')
+
+def common(request):
+    return render(request, 'common.html')
 
 @csrf_exempt
 def check_answer(request):

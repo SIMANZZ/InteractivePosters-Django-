@@ -7,4 +7,5 @@ urlpatterns = [
     path('', main, name='main'),
     path('check_answer/', check_answer, name='check_answer'),
     path('<str:machine_name>', machines_render),
+    path('common/', common, name='common')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
