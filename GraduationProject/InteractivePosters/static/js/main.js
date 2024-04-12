@@ -116,6 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             else if (id == "training") {
                 setMode("training");
+                const parentContainer = document.getElementById(id).parentNode.parentNode;
+                console.log(parentContainer);
+                localStorage.setItem('svgName', parentContainer.id);
             }
             else if (id == "control") {
                 setMode("control");
@@ -133,12 +136,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 parentContainer.querySelectorAll('button')[2].style.display = 'none';
 
-                let controlButtons = document.getElementById(id).name.split('|');
-                console.log(controlButtons);
-
                 const formsData = [
-                    { buttonText: "Тренировка", action: controlButtons[0] },
-                    { buttonText: "Контроль", action: controlButtons[1] },
+                    { buttonText: "Тренировка", action: '/test/' },
+                    { buttonText: "Контроль", action: '/test/' },
                     { buttonText: "Назад", action: '' },
                 ];
                 console.log(formsData);
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const examContainer = document.createElement("div");
                 examContainer.classList.add("exam-container");
-                examContainer.id = knowledgeID;
+                examContainer.id = document.getElementById(id).name;
 
                 formsData.forEach(({ buttonText, action }) => {
 
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const formsData = [
             // { buttonText: "Общий вид", action: data.imageCommon_adress },
             { buttonText: "Общий вид", action: '/common/' },
-            { buttonText: "Интерактивный плакат", action: data.imageInteractive_adress },
+            { buttonText: "Интерактивный плакат", action: data.image_adress+"_interactive" },
             { buttonText: "Контроль знаний", action: '' }
         ];
 
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button.textContent = buttonText;
             if (buttonText == "Контроль знаний") {
                 button.id = 'knowledge-control' + counter;
-                button.name = data.trainingButton_adress + '|' + data.examButton_adress;
+                button.name = data.image_adress;
                 buttonContainer.appendChild(button);
             }
             else if (buttonText == "Общий вид") {
