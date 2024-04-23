@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
         container.addEventListener('click', function (event) {
             let id = event.target.id;
             console.log(id);
-            if (id == '1') {
+            if (id == 'button_ElectricMachines') {
                 container_first.querySelectorAll('.buttons')[0].style.display = 'flex';
             }
-            else if (id == '4') {
+            else if (id == 'button_GeneralPrincipals') {
                 back_button_stage = 0;
                 ImagesActive();
                 flags.setACmachines_Sync(false);
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 flags.setGeneralPrincipals(true);
                 ShowImagesByFlags();
             }
-            else if (id == '3') {
+            else if (id == 'button_DCMachines') {
                 back_button_stage = 0;
                 ImagesActive();
                 flags.setACmachines_Sync(false);
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 flags.setGeneralPrincipals(false);
                 setTimeout(ShowImagesByFlags, 0);
             }
-            else if (id == '5') {
+            else if (id == 'button_Async') {
                 back_button_stage = 2;
                 ImagesActive();
                 flags.setACmachines_Sync(false);
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 flags.setGeneralPrincipals(false);
                 ShowImagesByFlags();
             }
-            else if (id == '6') {
+            else if (id == 'button_Sync') {
                 back_button_stage = 2;
                 ImagesActive();
                 flags.setACmachines_Sync(true);
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(flags);
                 ShowImagesByFlags();
             }
-            else if (id == '2') {
+            else if (id == 'button_ACMachines') {
                 back_button_stage = 1;
                 console.log(container_first.querySelectorAll('.buttons')[1]);
                 container_first.querySelectorAll('.buttons')[1].style.display = 'flex';

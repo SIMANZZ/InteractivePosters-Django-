@@ -66,7 +66,7 @@ def main(request):
         {
             "name": "Коллекторы",
             "imageSrc": 'images/ACmachines/Sync/Коллекторы.jpg',
-            "image_adress": "none",
+            "image_adress": "collectors",
         },
         {
             "name": "Ротор и статор турбогенератора",
@@ -146,8 +146,8 @@ def test(request):
 def common(request):
     return render(request, 'common.html')
 
-def svgs(request):
-    return render(request, 'svgs.html')
+def information(request):
+    return render(request, 'information.html')
 
 @csrf_exempt
 def check_answer(request):

@@ -51,22 +51,28 @@
 <body>
   <div class="container">
     <div class="navbar">
-      <button>Справка</button>
-      <button>Глоссарий</button>
-      <button>Медиатека</button>
+      <form action="/information/">
+        <button>Справка</button>
+      </form>
+      <form action="/glossary/">
+        <button>Глоссарий</button>
+      </form>
+      <form action="/media_library/">
+        <button>Медиатека</button>
+      </form>
     </div>
     <div class="container-first">
       <div class="text">ИНТЕРАКТИВНЫЕ ПЛАКАТЫ "ВСЁ ОБ ЭЛЕКТРИЧЕСКИХ МАШИНАХ"</div>
-      <button class="button1" id="1">Электрические машины</button>
+      <button class="button1" id="button_ElectricMachines">Электрические машины</button>
       <div class="buttons" style="display: none;">
-        <button id="2">Машины переменного тока</button>
-        <button id="3">Машины постоянного тока</button>
-        <button id="4">Общие принципы</button>
+        <button id="button_ACMachines">Машины переменного тока</button>
+        <button id="button_DCMachines">Машины постоянного тока</button>
+        <button id="button_GeneralPrincipals">Общие принципы</button>
       </div>
       <div class="AsyncAndSync">
         <div class="buttons" style="display: none;">
-          <button id="5">Асинхронные</button>
-          <button id="6">Синхронные</button>
+          <button id="button_Async">Асинхронные</button>
+          <button id="button_Sync">Синхронные</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/information.css" %}">
+    <title>Справка</title>
+    <style>
+        body {
+            background-image: url("{{ MEDIA_URL }}images/HtCrWcxpywI.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Для того, чтобы найти необходимые изображения преходите по разделам используя ЛКМ</p>
+        <p>При открытие нужного раздела с изображениями, наведитесь на интересующее вас изображение и выберите при помощи ЛКМ нужный вам режим</p>
+        <p>Вы всегда можете вернуться, использую кнопку назад в интерфейсе приложения</p>
+        <div id="bgcolor"></div>
+    </div>
+    <button onclick="console.log('click')" id = "back-button">Назад</button>
+</body>
+
+</html>
