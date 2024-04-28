@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static "css/modal.css" %}">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-image: url("{{ MEDIA_URL }}images/HtCrWcxpywI.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<script>
+    let path_to_video = '{{ MEDIA_URL }}videos/';
+</script>
+
+<body>
+    <div id="videoObmotka" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div id="video-player">
+                <video controls id="player">
+                    <!-- Здесь будет проигрываться видео -->
+                </video>
+            </div>
+        </div>
+    </div>
+    <h1 style="color: white;">Список видео</h1>
+    <ul style="color: white;" id="video-list">
+        <!-- Сюда будут добавлены ссылки на видео -->
+    </ul>
+</body>
+
+<script src="{% static 'js/medialibrary.js' %}"></script>
+
+</html>

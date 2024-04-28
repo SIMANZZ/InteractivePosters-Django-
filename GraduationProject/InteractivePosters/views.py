@@ -149,6 +149,9 @@ def common(request):
 def information(request):
     return render(request, 'information.html')
 
+def mediaLibrary(request):
+    return render(request, 'medialibrary.html')
+
 @csrf_exempt
 def check_answer(request):
     if request.method == 'POST':

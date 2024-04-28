@@ -9,5 +9,6 @@ urlpatterns = [
                   path('<str:machine_name>', machines_render),
                   path('common/', common, name='common'),
                   path('test/', test, name='test'),
-                  path('information/', information, name='information')
+                  path('information/', information, name='information'),
+                  path('medialibrary/', mediaLibrary, name='medialibrary')
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

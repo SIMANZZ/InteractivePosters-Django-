@@ -1,18 +1,3 @@
-let codeName = localStorage.getItem('svgName');
-console.log(codeName);
-
-let n;
-
-let resultName = '';
-switch (codeName) {
-    case 'rotor_and_stator_of_turbogenerator':
-        resultName = rotor_and_stator_of_turbogenerator;
-        n = 22;
-    case 'collectors':
-        resultName = collectors;
-        n = 22;
-}
-
 fetch(resultName)
     .then(response => response.text())
     .then(svgContent => {
@@ -22,10 +7,9 @@ fetch(resultName)
         document.getElementById('svg1').id = 'svgObject';
 
         // Теперь svgObject доступен после добавления SVG в DOM
-        // const svgObject = document.getElementById('svgObject');
-        // console.log(svgObject);
         //Обращение к SVG изображению
         const svgObject = document.getElementById('svgObject');
+        console.log(svgObject);
 
         let mode = localStorage.getItem('mode');
         let modeName;
@@ -97,7 +81,7 @@ fetch(resultName)
                                     alert(successResponse.message);
                                     console.log(arr_temp);
                                     svgObject.getElementById(id).style.opacity = '0.6';
-                                    if (Object.keys(arr_temp).length == 20) {
+                                    if (Object.keys(arr_temp).length == n-2) {
                                         // Итерируемся по свойствам словаря
                                         for (var key in arr_temp) {
                                             // Проверяем, является ли свойство собственным свойством объекта (не унаследованным)
