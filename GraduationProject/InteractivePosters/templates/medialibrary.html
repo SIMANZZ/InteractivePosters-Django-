@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static "css/modal.css" %}">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/medialibrary.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <title>Медиатека</title>
 </head>
 
 <style>
@@ -22,18 +24,16 @@
 </script>
 
 <body>
-    <div id="videoObmotka" class="modal">
+    <div id="video-container" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
             <div id="video-player">
                 <video controls id="player">
-                    <!-- Здесь будет проигрываться видео -->
                 </video>
             </div>
         </div>
     </div>
-    <h1 style="color: white;">Список видео</h1>
-    <ul style="color: white;" id="video-list">
+    <ul id="video-list">
         <!-- Сюда будут добавлены ссылки на видео -->
     </ul>
 </body>

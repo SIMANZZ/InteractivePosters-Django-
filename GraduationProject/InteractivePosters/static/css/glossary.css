@@ -1,0 +1,112 @@
+.button-container {
+    display: flex;
+    width: 900px;
+    gap: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    color: white;
+    text-shadow:
+        -0.6px -0.6px 0 red,
+        0.6px -0.6px 0 red,
+        -0.6px 0.6px 0 red,
+        0.6px 0.6px 0 red;
+    font-size: 18pt;
+}
+
+.back-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 300px;
+    background-color: red;
+    color: white;
+    border: 0;
+    left: 50%;
+    font-size: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -ms-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -o-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -webkit-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -moz-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    margin-top: 20px;
+}
+
+.engine-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравниваем по центру по вертикали */
+    align-items: center; /* Выравниваем по центру по горизонтали */
+    width: 100%;
+    height: 100vh; /* Высота контейнера равна высоте окна браузера */
+}
+
+.this img {
+    display: block;
+    width: 400px;
+    height: 300px;
+}
+
+.back{
+    text-align: center;
+}
+
+.back button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 300px;
+    background-color: red;
+    color: white;
+    border: 0;
+    left: 50%;
+    font-size: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -ms-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -o-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -webkit-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    -moz-transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    margin-top: 20px;
+}
+
+.this {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #333;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
