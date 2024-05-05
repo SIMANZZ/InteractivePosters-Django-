@@ -1,10 +1,20 @@
+import { characteristicByName } from "./names_of_Machines.js";
+
+let n;
+let resultName;
+
+let returnedCharacteristics = characteristicByName();
+n = returnedCharacteristics[0];
+resultName = returnedCharacteristics[1];
+
+console.log(resultName);
+
 fetch(resultName)
     .then(response => response.text())
     .then(svgContent => {
         var div = document.createElement('div');
         div.innerHTML = svgContent;
         document.body.insertBefore(div, document.body.firstChild);
-        document.getElementById('svg1').id = 'svgObject';
 
         // Теперь svgObject доступен после добавления SVG в DOM
         //Обращение к SVG изображению
@@ -13,10 +23,10 @@ fetch(resultName)
 
         let mode = localStorage.getItem('mode');
         let modeName;
-        if(mode == "control"){
+        if (mode == "control") {
             modeName = 'Режим контроля';
         }
-        else{
+        else {
             modeName = 'Режим тренировки';
         }
         document.title = modeName;
@@ -81,7 +91,7 @@ fetch(resultName)
                                     alert(successResponse.message);
                                     console.log(arr_temp);
                                     svgObject.getElementById(id).style.opacity = '0.6';
-                                    if (Object.keys(arr_temp).length == n-2) {
+                                    if (Object.keys(arr_temp).length == n - 2) {
                                         // Итерируемся по свойствам словаря
                                         for (var key in arr_temp) {
                                             // Проверяем, является ли свойство собственным свойством объекта (не унаследованным)

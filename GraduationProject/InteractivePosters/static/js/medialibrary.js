@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const listItem = document.createElement('li');
         listItem.style.color = 'white';
         const link = document.createElement('a');
-        link.href = path_to_video + videoName;
+        link.href = '../media/videos/' + videoName;
         link.textContent = videoName;
         listItem.appendChild(link);
         videoList.appendChild(listItem);

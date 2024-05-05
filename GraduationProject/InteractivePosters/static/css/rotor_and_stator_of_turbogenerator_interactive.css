@@ -12,6 +12,7 @@
 #video_obmotka:hover {
     width: 60px;
     height: 60px;
+    cursor: pointer;
     transform: translate(-5px,-5px);
     -webkit-transform: translate(-5px,-5px);
     -moz-transform: translate(-5px,-5px);

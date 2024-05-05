@@ -10,31 +10,9 @@
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 
-<script>
-    let rotor_and_stator_of_turbogenerator = '{{ MEDIA_URL }}images/ACmachines/Sync/Ротор и статор турбогенератора.svg';
-    let collectors = '{{ MEDIA_URL }}images/ACmachines/Sync/Коллекторы.svg';
-
-    let codeName = localStorage.getItem('svgName');
-    console.log(codeName);
-
-    let n;
-
-    let resultName;
-    switch (codeName) {
-        case 'rotor_and_stator_of_turbogenerator':
-            resultName = rotor_and_stator_of_turbogenerator;
-            n = 22;
-            break;
-        case 'collectors':
-            resultName = collectors;
-            n = 18;
-            break;
-    }
-</script>
-
 <body></body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="{% static "js/test.js" %}"></script>
+<script type="module" src="{% static "js/test.js" %}"></script>
 
 </html>
