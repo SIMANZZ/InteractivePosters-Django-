@@ -97,7 +97,7 @@ ACmachinesimages_dataAsync = [
     {
         "name": "Асинхронный двигатель с короткозамкнутым ротором",
         "imageSrc": '../media/images/ACmachines/Async/Асинхронный двигатель с короткозамкнутым ротором.jpg',
-        "image_adress": "none",
+        "image_adress": "async_engine_with_short_circuited_rotor",
     },
     {
         "name": "Асинхронный двигатель с фазным ротором",

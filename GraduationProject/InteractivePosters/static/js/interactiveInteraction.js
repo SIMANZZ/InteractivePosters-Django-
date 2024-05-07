@@ -21,14 +21,35 @@ document.addEventListener('DOMContentLoaded', () => {
             if (svgObject) {
                 svgObject.addEventListener('mouseover', function (event) {
                     let id = event.target.id
-                    if (id > 0 && id < n) {
-                        svgObject.getElementById('layer' + id).style.opacity = '0.5';
-                        svgObject.getElementById('rect' + id).style.opacity = '0.6';
-                        svgObject.getElementById('text' + id).style.display = 'inline';
+                    if(id.includes('plus')){
+                        console.log('должно работать');
+                        // Находим все числа в строке с помощью регулярного выражения
+                        let numbers = id.match(/\d+/g);
+                        svgObject.getElementById('layer'+numbers[0]).style.opacity = '0.5';
+                        svgObject.getElementById('rect'+numbers[0]).style.opacity = '0.6';
+                        svgObject.getElementById('text'+numbers[0]).style.display = 'inline';
+                        svgObject.getElementById('layer'+numbers[1]).style.opacity = '0.5';
+                        svgObject.getElementById('rect'+numbers[1]).style.opacity = '0.6';
+                        svgObject.getElementById('text'+numbers[1]).style.display = 'inline';
+                    }
+                    else if (id > 0 && id < n) {
+                        svgObject.getElementById('layer'+id).style.opacity = '0.5';
+                        svgObject.getElementById('rect'+id).style.opacity = '0.6';
+                        svgObject.getElementById('text'+id).style.display = 'inline';
                     }
                 });
                 svgObject.addEventListener('mouseout', function (event) {
                     let id = event.target.id
+                    if(id.includes('plus')){
+                        // Находим все числа в строке с помощью регулярного выражения
+                        let numbers = id.match(/\d+/g);
+                        svgObject.getElementById('layer'+numbers[0]).style.opacity = '0';
+                        svgObject.getElementById('rect'+numbers[0]).style.opacity = '0';
+                        svgObject.getElementById('text'+numbers[0]).style.display = 'none';
+                        svgObject.getElementById('layer'+numbers[1]).style.opacity = '0';
+                        svgObject.getElementById('rect'+numbers[1]).style.opacity = '0';
+                        svgObject.getElementById('text'+numbers[1]).style.display = 'none';
+                    }
                     if (id > 0 && id < n) {
                         svgObject.getElementById('layer' + id).style.opacity = '0';
                         svgObject.getElementById('rect' + id).style.opacity = '0';
@@ -51,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         document.querySelectorAll('.openModalBtn').forEach(function (button) {
                             button.addEventListener('click', function () {
-                                var modalId = button.getAttribute('data-modal');
+                                var modalId = button.getAttribute('id');
                                 openModal(modalId);
                             });
                         });
@@ -61,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         function openModal(modalID) {
                             switch (modalID) {
-                                case "videoObmotka":
+                                case "video_obmotka":
                                     div.id = "video-player";
                                     modalContent.appendChild(div);
                                     // Устанавливаем атрибут controls для отображения элементов управления
@@ -72,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     videoElement.src = '../media/videos/Производство обмоток статоров турбогенераторов и гидрогенераторов.mp4';
                                     // videoPlayer.play();
                                     break;
-                                case "obmotkaText":
+                                case "sheet":
                                     div.innerHTML = 'Обмотка ротора в электрической машине представляет собой проводящий элемент, который окружает ось ротора и' +
                                         'создает электромагнитное поле при прохождении через него электрического тока.';
                                     modalContent.appendChild(div);

@@ -20,3 +20,7 @@ button:hover {
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
 }
+
+#Texts:hover{
+    cursor: default;
+}

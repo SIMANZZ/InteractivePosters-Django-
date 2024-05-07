@@ -122,6 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             else if (id == "control") {
                 setMode("control");
+                const parentContainer = document.getElementById(id).parentNode.parentNode;
+                console.log(parentContainer);
+                localStorage.setItem('svgName', parentContainer.id);
             }
             else if (id.startsWith("common_button")) {
                 localStorage.setItem('image_src', id.split('|')[1]);
@@ -188,6 +191,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById(id).parentNode.remove();
             }
         });
+        container_images.addEventListener('submit', function(event){
+            let id = event.target.id;
+            if (id.startsWith("form")){
+                event.preventDefault();
+                let name = document.getElementById(id).name;
+                console.log(name);
+                localStorage.setItem('svgName', name);
+                document.getElementById(id).submit();
+            }
+        });
     }
 
     let counter = 0;
@@ -204,7 +217,6 @@ document.addEventListener('DOMContentLoaded', () => {
         buttonContainer.id = counter;
 
         const formsData = [
-            // { buttonText: "Общий вид", action: data.imageCommon_adress },
             { buttonText: "Общий вид", action: '/common/' },
             { buttonText: "Интерактивный плакат", action: data.image_adress+"_interactive" },
             { buttonText: "Контроль знаний", action: '' }
@@ -213,6 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formsData.forEach(({ buttonText, action }) => {
             const form = document.createElement("form");
             form.action = action;
+            form.name = data.image_adress;
 
             const button = document.createElement("button");
             button.textContent = buttonText;
@@ -226,10 +239,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 form.appendChild(button);
                 buttonContainer.appendChild(form);
             }
-            else {
+            else if(buttonText == "Интерактивный плакат"){
+                form.id = 'form' + counter;
+                button.type = "submit";
                 form.appendChild(button);
                 buttonContainer.appendChild(form);
             }
+            // else {
+            //     form.appendChild(button);
+            //     buttonContainer.appendChild(form);
+            // }
         });
 
         counter++;
