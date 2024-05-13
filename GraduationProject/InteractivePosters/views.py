@@ -74,17 +74,17 @@ ACmachinesimages_dataSync = [
     {
         "name": "Ротор синхронного двигателя",
         "imageSrc": '../media/images/ACmachines/Sync/Ротор синхронного двигателя.jpg',
-        "image_adress": "none",
+        "image_adress": "sync_engine_rotor",
     },
     {
         "name": "Синхронная машина",
         "imageSrc": '../media/images/ACmachines/Sync/Синхронная машина.jpg',
-        "image_adress": "none",
+        "image_adress": "sync_machine",
     },
     {
         "name": "Синхронный двигатель",
         "imageSrc": '../media/images/ACmachines/Sync/Синхронный двигатель.jpg',
-        "image_adress": "none",
+        "image_adress": "sync_engine",
     },
     {
         "name": "Турбогенератор",
@@ -102,22 +102,22 @@ ACmachinesimages_dataAsync = [
     {
         "name": "Асинхронный двигатель с фазным ротором",
         "imageSrc": '../media/images/ACmachines/Async/Асинхронный двигатель с фазным ротором.jpg',
-        "image_adress": "none",
+        "image_adress": "async_engine_with_phase_rotor",
     },
     {
         "name": "Короткозамкнутые роторы асинхронного двигателя",
         "imageSrc": '../media/images/ACmachines/Async/Короткозамкнутые роторы асинхронного двигателя.jpg',
-        "image_adress": "none",
+        "image_adress": "short_circuited_async_engine_rotors",
     },
     {
         "name": "Статор асинхронного двигателя",
         "imageSrc": '../media/images/ACmachines/Async/Статор асинхронного двигателя.jpg',
-        "image_adress": "none",
+        "image_adress": "async_engine_stator",
     },
     {
         "name": "Фазный ротор асинхронного двигателя",
         "imageSrc": '../media/images/ACmachines/Async/Фазный ротор асинхронного двигателя.jpg',
-        "image_adress": "none",
+        "image_adress": "phase_rotor_of_an_async_engine",
     },
 ]
 
@@ -165,7 +165,6 @@ def check_answer(request):
         machine_name = request.POST.get('machine_name', None)
         question_number = request.POST.get('question_number', None)
         answer = request.POST.get('answer', None)
-        mode = request.POST.get('mode', None)
 
         if machine_name is not None and question_number is not None and answer is not None:
             machine = get_object_or_404(Machines, machine_name=machine_name)
