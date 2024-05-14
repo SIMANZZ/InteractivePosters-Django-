@@ -2,7 +2,7 @@ from django.db import models
 
 class Machines(models.Model):
     machine_name = models.CharField(max_length=100, blank=False)
-    definition = models.CharField(max_length=385, blank=False, default="none")
+    definition = models.CharField(max_length=500, blank=False, default="none")
 
     def __str__(self):
         return self.machine_name

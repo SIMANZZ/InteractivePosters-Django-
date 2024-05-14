@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-p{
+p {
     color: white;
     text-shadow:
         -0.6px -0.6px 0 red,
@@ -45,7 +45,7 @@ p{
     margin-top: 20px;
 }
 
-.engine-container{
+.engine-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -56,26 +56,55 @@ p{
     font-weight: 700;
 }
 
-.container-images{
+.container-images {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Выравниваем по центру по вертикали */
-    align-items: center; /* Выравниваем по центру по горизонтали */
+    justify-content: center;
+    /* Выравниваем по центру по вертикали */
+    align-items: center;
+    /* Выравниваем по центру по горизонтали */
     width: 100%;
-    height: 100vh; /* Высота контейнера равна высоте окна браузера */
+    height: 100vh;
+    /* Высота контейнера равна высоте окна браузера */
 }
 
-.this img {
-    display: block;
+.this .main_image {
+    /* display: block; */
     width: 400px;
     height: 300px;
 }
 
-.back{
+.this .text_image {
+    margin-top: 250px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.this .text_image:hover {
+    transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    transform: translate(-5px, -5px);
+    cursor: pointer;
+    -webkit-transform: translate(-5px, -5px);
+    -moz-transform: translate(-5px, -5px);
+    -ms-transform: translate(-5px, -5px);
+    -o-transform: translate(-5px, -5px);
+}
+
+.back {
     text-align: center;
 }
 
-.back button{
+.back button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 300px;
@@ -98,15 +127,47 @@ p{
 }
 
 .this {
-    width: 400px;
+    display: flex;
+    width: 500px;
     height: 300px;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     margin: 0 auto;
-    background-color: #333;
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
+}
+
+#p-modal {
+    all: unset;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+#modalContent {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 5px 20px 20px 20px;
+    max-width: 800px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: auto;
+    overflow-y: auto;
+    text-align: justify;
+    /* Выравнивание текста по ширине */
+}
+
+#font-controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#font-controls button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
 }

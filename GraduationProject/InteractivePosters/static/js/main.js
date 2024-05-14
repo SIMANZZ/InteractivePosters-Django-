@@ -43,6 +43,32 @@ class Flags {
 let flags = new Flags();
 
 document.addEventListener('DOMContentLoaded', () => {
+    $.ajax({
+        type: "GET",
+        url: "/category_proccessing/",
+        headers: { "X-CSRFToken": "{{ csrf_token }}" },
+        success: function (response) {
+            console.log(response);
+            document.getElementById('button_ElectricMachines').click();
+            switch(response.category){
+                case 'Async':
+                    document.getElementById('button_Async').click();
+                    break;
+                case 'Sync':
+                    document.getElementById('button_Sync').click();
+                    break;
+                case 'DCmachines':
+                    document.getElementById('button_DCMachines').click();
+                    break;
+                case 'GeneralPrincipals':
+                    document.getElementById('button_GeneralPrincipals').click();
+                    break;
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error("Ошибка: ", status, error);
+        }
+    });
 
     const container = document.querySelector(".container");
     const container_first = document.querySelector('.container-first');

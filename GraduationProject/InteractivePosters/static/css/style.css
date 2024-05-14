@@ -12,15 +12,11 @@
     box-shadow: inset 0.05em 0.05em 0 rgba(0, 0, 0, 0.1), inset 0 -0.05em 0 rgba(0, 0, 0, 0.07);
 }
 
-button:hover {
+button:not(.no-hover-effect):hover {
     transform: scale(0.9);
     background-color: #ff6363;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
-}
-
-#Texts:hover{
-    cursor: default;
 }

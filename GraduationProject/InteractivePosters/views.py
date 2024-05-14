@@ -121,7 +121,6 @@ ACmachinesimages_dataAsync = [
     },
 ]
 
-
 def main(request):
     # Преобразование данных в формат JSON
     GeneralPrincipalsimages_json = json.dumps(GeneralPrincipalsimages_data)
@@ -182,6 +181,7 @@ def check_answer(request):
     else:
         return JsonResponse({'message': 'Method not allowed'}, status=405)
 
+
 @csrf_exempt
 def check_symbol(request):
     if request.method == 'POST':
@@ -198,3 +198,62 @@ def check_symbol(request):
 
         # Выводим результат
         return JsonResponse(filtered_data, status=200, safe=False)
+
+
+@csrf_exempt
+def show_definition(request):
+    if request.method == 'POST':
+        machine_name = request.POST.get('machine_name', None)
+        if machine_name is not None:
+            machine = get_object_or_404(Machines, machine_name=machine_name)
+            definition = machine.definition
+            return JsonResponse({'definition': definition}, status=200)
+        else:
+            return JsonResponse({'error': 'machine_name parameter is missing'}, status=400)
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+
+@csrf_exempt
+def category_proccessing(request):
+    if request.method == 'POST':
+        machine_name = request.POST.get('machine_name', None)
+        if machine_name:
+            category = None
+            for item in ACmachinesimages_dataAsync:
+                if machine_name in item["name"]:
+                    category = 'Async'
+                    break
+            if not category:
+                for item in ACmachinesimages_dataSync:
+                    if machine_name in item["name"]:
+                        category = 'Sync'
+                        break
+            if not category:
+                for item in DCmachinesimages_data:
+                    if machine_name in item["name"]:
+                        category = 'DCmachines'
+                        break
+            if not category:
+                for item in GeneralPrincipalsimages_data:
+                    if machine_name in item["name"]:
+                        category = 'GeneralPrincipals'
+                        break
+
+            if category:
+                request.session['category'] = category  # Сохраняем категорию в сессии
+                return JsonResponse({'success': category})
+            else:
+                return JsonResponse({'error': 'Unknown machine name'}, status=400)
+        else:
+            return JsonResponse({'error': 'machine_name parameter is missing'}, status=400)
+
+    elif request.method == 'GET':
+        category = request.session.pop('category', None)  # Получаем категорию из сессии
+        if category:
+            return JsonResponse({'category': category}, status=200)
+        else:
+            return JsonResponse({'error': 'No category found in session'}, status=400)
+
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
