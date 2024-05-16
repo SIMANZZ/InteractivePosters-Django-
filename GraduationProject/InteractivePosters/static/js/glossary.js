@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let textConteiner = document.getElementById("text-container");
         textConteiner.querySelector('p').innerHTML = text_definition;
         console.log(textConteiner.querySelector('p'));
-        textConteiner.style.display = 'inline';
+        textConteiner.style.display = 'flex';
     }
 
     function closeModal() {
