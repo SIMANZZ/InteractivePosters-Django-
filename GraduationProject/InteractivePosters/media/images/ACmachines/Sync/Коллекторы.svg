@@ -3,7 +3,7 @@
 
 <svg
    version="1.1"
-   id="svg1"
+   id="svgObject"
    width="100%"
    height="100%"
    viewBox="0 0 1920 1371"
@@ -27,14 +27,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="1.4142136"
-     inkscape:cx="837.56798"
-     inkscape:cy="406.23285"
+     inkscape:cx="1235.3155"
+     inkscape:cy="877.87305"
      inkscape:window-width="3440"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
+     inkscape:current-layer="layer232131" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
@@ -50,10 +50,93 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="Backgrounds"
-     sodipodi:insensitive="true">
+     inkscape:label="Detail1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Detail2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Detail3" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Detail4" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer41"
+     inkscape:label="Detail41" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Detail5" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Detail6" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer61"
+     inkscape:label="Detail61" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Detail7" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Detail8" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="Detail9" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="Detail10" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="Detail11" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="Detail12" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="Detail13" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer14"
+     inkscape:label="Detail14" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer15"
+     inkscape:label="Detail15" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="Detail16" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer161"
+     inkscape:label="Detail161" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer17"
+     inkscape:label="Detail17" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer18"
+     inkscape:label="Detail18" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1321"
+     inkscape:label="Backgrounds">
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.67896"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.67896"
        id="rect1"
        width="147.69943"
        height="20.187328"
@@ -61,7 +144,7 @@
        y="139.09949"
        inkscape:label="rect1" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.79953"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.79953"
        id="rect2"
        width="169.67461"
        height="20.187328"
@@ -69,7 +152,7 @@
        y="190.39908"
        inkscape:label="rect2" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.09563"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:2.09563"
        id="rect3"
        width="230.10635"
        height="20.187328"
@@ -77,28 +160,28 @@
        y="116.1117"
        inkscape:label="rect3" />
     <g
-       id="rect4"
+       id="rect4412"
        style="display:inline"
        inkscape:label="rect4">
       <rect
-         style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.09178"
-         id="rect1-5-18"
+         style="display:inline;opacity:0;fill:#000000;stroke-width:2.09178"
+         id="rect41"
          width="229.26115"
          height="20.187328"
          x="1317"
          y="168"
-         inkscape:label="rect1" />
+         inkscape:label="rect42141" />
       <rect
-         style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.09178"
-         id="rect1-5"
+         style="display:inline;opacity:0;fill:#000000;stroke-width:2.09178"
+         id="rect4"
          width="229.26115"
          height="20.187328"
          x="109.09867"
          y="114.48923"
-         inkscape:label="rect1" />
+         inkscape:label="rect42141" />
     </g>
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.0763"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:2.0763"
        id="rect5"
        width="225.88036"
        height="20.187328"
@@ -106,28 +189,28 @@
        y="178.53232"
        inkscape:label="rect5" />
     <g
-       id="rect6"
+       id="rect6fdsaf"
        style="display:inline"
        inkscape:label="rect6">
       <rect
-         style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.16566"
-         id="rect1-5-7-9"
+         style="display:inline;opacity:0;fill:#000000;stroke-width:2.16566"
+         id="rect61"
          width="245.74254"
          height="20.187328"
          x="1138.9478"
          y="121.32201"
-         inkscape:label="rect1" />
+         inkscape:label="rect65436" />
       <rect
-         style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.16566"
-         id="rect1-5-7"
+         style="display:inline;opacity:0;fill:#000000;stroke-width:2.16566"
+         id="rect6"
          width="245.74254"
          height="20.187328"
          x="357.99741"
          y="70.920959"
-         inkscape:label="rect1" />
+         inkscape:label="rect64355" />
     </g>
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.85688"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.85688"
        id="rect7"
        width="180.6622"
        height="20.187328"
@@ -135,7 +218,7 @@
        y="191.25539"
        inkscape:label="rect7" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.04499"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:2.04499"
        id="rect8"
        width="219.11876"
        height="20.187328"
@@ -143,7 +226,7 @@
        y="155.72437"
        inkscape:label="rect8" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.05089"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:2.05089"
        id="rect9"
        width="220.38657"
        height="20.187328"
@@ -151,7 +234,7 @@
        y="204.92096"
        inkscape:label="rect9" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.51747"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.51747"
        id="rect10"
        width="120.65307"
        height="20.187328"
@@ -159,7 +242,7 @@
        y="245.22142"
        inkscape:label="rect10" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.92512"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.92512"
        id="rect11"
        width="194.18539"
        height="20.187328"
@@ -167,7 +250,7 @@
        y="940.00458"
        inkscape:label="rect11" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.80177"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.80177"
        id="rect12"
        width="170.09721"
        height="20.187328"
@@ -175,7 +258,7 @@
        y="1020.4148"
        inkscape:label="rect12" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.20625"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:2.20625"
        id="rect13"
        width="255.03973"
        height="20.187328"
@@ -183,7 +266,7 @@
        y="920.34229"
        inkscape:label="rect13" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.79279"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.79279"
        id="rect14"
        width="168.40681"
        height="20.187328"
@@ -191,7 +274,7 @@
        y="981.565"
        inkscape:label="rect14" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.13422"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.13422"
        id="rect15"
        width="67.405525"
        height="20.187328"
@@ -199,28 +282,28 @@
        y="1022.0914"
        inkscape:label="rect15" />
     <g
-       id="rect16"
+       id="rect1665434"
        style="display:inline"
        inkscape:label="rect16">
       <rect
-         style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.09879"
-         id="rect1-5-7-06"
+         style="display:inline;opacity:0;fill:#000000;stroke-width:2.09879"
+         id="rect16"
          width="230.80139"
          height="20.187328"
          x="1611.1199"
          y="646.19092"
-         inkscape:label="rect1" />
+         inkscape:label="rect165366" />
       <rect
-         style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.08405"
-         id="rect1-5-7-6"
+         style="display:inline;opacity:0;fill:#000000;stroke-width:2.08405"
+         id="rect161"
          width="227.57076"
          height="20.187328"
          x="1106.0778"
          y="1195.9131"
-         inkscape:label="rect1" />
+         inkscape:label="rect1645523455" />
     </g>
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:1.34567"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:1.34567"
        id="rect17"
        width="94.880051"
        height="20.187328"
@@ -228,7 +311,7 @@
        y="805.35229"
        inkscape:label="rect17" />
     <rect
-       style="display:inline;opacity:0.6;fill:#000000;stroke-width:2.19398"
+       style="display:inline;opacity:0;fill:#000000;stroke-width:2.19398"
        id="rect18"
        width="252.2113"
        height="20.187328"
@@ -238,202 +321,12 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Details"
-     style="opacity:0.604"
-     sodipodi:insensitive="true">
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-       id="1"
-       width="19.13998"
-       height="32.81599"
-       x="0.8538624"
-       y="171.76099"
-       inkscape:label="detail1" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-       id="2"
-       width="19.13998"
-       height="32.81599"
-       x="93.304047"
-       y="169.46211"
-       inkscape:label="detail2" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-       id="3"
-       width="19.13998"
-       height="32.81599"
-       x="223.48039"
-       y="137.04965"
-       inkscape:label="detail3" />
-    <g
-       id="4"
-       inkscape:label="detail4"
-       style="opacity:0.604">
-      <rect
-         style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-         id="1-04"
-         width="19.13998"
-         height="32.81599"
-         x="1291.1967"
-         y="181.27792"
-         inkscape:label="detail1" />
-      <rect
-         style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-         id="1-7"
-         width="19.13998"
-         height="32.81599"
-         x="268.14011"
-         y="139.30504"
-         inkscape:label="detail1" />
-    </g>
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-       id="5"
-       width="19.13998"
-       height="32.81599"
-       x="316.66559"
-       y="137.95134"
-       inkscape:label="detail5" />
-    <g
-       id="6"
-       inkscape:label="detail6"
-       style="opacity:0.604">
-      <rect
-         style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-         id="1-36"
-         width="19.13998"
-         height="32.81599"
-         x="1108.0339"
-         y="131.10387"
-         inkscape:label="detail1" />
-      <rect
-         style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-         id="1-76"
-         width="19.13998"
-         height="32.81599"
-         x="415.63617"
-         y="95.641739"
-         inkscape:label="detail1" />
-    </g>
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-       id="7"
-       width="19.13998"
-       height="32.81599"
-       x="596.4624"
-       y="148.93109"
-       inkscape:label="detail7" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.648565"
-       id="8"
-       width="19.13998"
-       height="32.81599"
-       x="1002.825"
-       y="183.34456"
-       inkscape:label="detail8" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.63378"
-       id="9"
-       width="19.13998"
-       height="31.336891"
-       x="1304.4745"
-       y="212.23613"
-       inkscape:label="detail9" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.925821"
-       id="10"
-       width="39.002159"
-       height="32.81599"
-       x="1315.9119"
-       y="236.67342"
-       inkscape:label="detail10" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.895284"
-       id="11"
-       width="36.471714"
-       height="32.81599"
-       x="548.79773"
-       y="968.39661"
-       inkscape:label="detail11" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.929474"
-       id="12"
-       width="39.310535"
-       height="32.81599"
-       x="548.23181"
-       y="1045.4353"
-       inkscape:label="detail12" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.938264"
-       id="13"
-       width="40.05759"
-       height="32.81599"
-       x="1148.0613"
-       y="905.94592"
-       inkscape:label="detail13" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.941757"
-       id="14"
-       width="40.356415"
-       height="32.81599"
-       x="1155.3896"
-       y="942.23059"
-       inkscape:label="detail14" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.950434"
-       id="15"
-       width="41.103474"
-       height="32.81599"
-       x="1442.7319"
-       y="984.82825"
-       inkscape:label="detail15" />
-    <g
-       id="16"
-       inkscape:label="detail16">
-      <rect
-         style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.948123"
-         id="1-2"
-         width="40.903858"
-         height="32.81599"
-         x="1666.4066"
-         y="673.51636"
-         inkscape:label="detail1" />
-      <rect
-         style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.953009"
-         id="1-55"
-         width="41.326458"
-         height="32.81599"
-         x="1209.722"
-         y="1153.9762"
-         inkscape:label="detail1" />
-    </g>
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.940748"
-       id="17"
-       width="40.269958"
-       height="32.81599"
-       x="1879.9899"
-       y="830.04083"
-       inkscape:label="detail17" />
-    <rect
-       style="display:inline;opacity:0.6;fill:#2a7fff;stroke-width:0.953009"
-       id="18"
-       width="41.326458"
-       height="32.81599"
-       x="1876.3074"
-       y="897.46899"
-       inkscape:label="detail18" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
+     id="layer332131"
      inkscape:label="Texts"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="10.110155"
        y="156.30658"
        id="text1"
@@ -444,7 +337,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7">Стяжная гайка</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="120.12048"
        y="207.60617"
        id="text2"
@@ -455,7 +348,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-8">Нажимной конус</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="19.854658"
        y="133.31879"
        id="text3"
@@ -465,27 +358,27 @@
          y="133.31879"
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-6">Изолирующая манжета</tspan></text>
     <g
-       id="text4"
+       id="text4dgf"
        style="display:inline"
        inkscape:label="text4">
       <text
          xml:space="preserve"
-         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
          x="110.16166"
          y="131.69632"
-         id="text1-60"
-         inkscape:label="text1"><tspan
+         id="text4"
+         inkscape:label="text4211"><tspan
            sodipodi:role="line"
            x="110.16166"
            y="131.69632"
            id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9">Коллекторная пластина</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
          x="1318.063"
          y="185.20709"
-         id="text1-60-1"
-         inkscape:label="text1"><tspan
+         id="text41"
+         inkscape:label="text423131"><tspan
            sodipodi:role="line"
            x="1318.063"
            y="185.20709"
@@ -493,7 +386,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="305.95654"
        y="195.73941"
        id="text5"
@@ -503,27 +396,27 @@
          y="195.73941"
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-7">Изолирующий цилиндр</tspan></text>
     <g
-       id="text6"
+       id="text6fsdfa"
        style="display:inline"
        inkscape:label="text6">
       <text
          xml:space="preserve"
-         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
          x="1140.0107"
          y="138.5291"
-         id="text1-60-8-7"
-         inkscape:label="text1"><tspan
+         id="text61"
+         inkscape:label="text652"><tspan
            sodipodi:role="line"
            x="1140.0107"
            y="138.5291"
            id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-7">Изолирующая прокладка</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
          x="359.06039"
          y="88.128044"
-         id="text1-60-8"
-         inkscape:label="text1"><tspan
+         id="text6"
+         inkscape:label="text6546"><tspan
            sodipodi:role="line"
            x="359.06039"
            y="88.128044"
@@ -531,7 +424,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="599.31836"
        y="208.46248"
        id="text7"
@@ -542,7 +435,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-71">Втулка коллектора</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="789.78278"
        y="172.93146"
        id="text8"
@@ -553,7 +446,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-3">Уплотняющий бондаж</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1329.6442"
        y="222.12805"
        id="text9"
@@ -564,7 +457,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-5">Армировочное кольцо</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1364.4451"
        y="262.42853"
        id="text10"
@@ -575,7 +468,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-2">Пластмасса</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="367.06955"
        y="957.21167"
        id="text11"
@@ -586,7 +479,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-0">Нажимная пружина</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="396.40396"
        y="1037.6218"
        id="text12"
@@ -597,7 +490,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-4">Нажимной палец</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="891.56335"
        y="937.54938"
        id="text13"
@@ -608,7 +501,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-3">Соединительные провода</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1003.9474"
        y="998.77209"
        id="text14"
@@ -619,7 +512,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-00">Щеткодержатель</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1375.0873"
        y="1039.9999"
        id="text15"
@@ -629,27 +522,27 @@
          y="1039.9999"
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-00-1">Щетки</tspan></text>
     <g
-       id="text16"
+       id="text1652345"
        style="display:inline"
        inkscape:label="text16">
       <text
          xml:space="preserve"
-         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
          x="1107.1407"
          y="1213.1201"
-         id="text1-60-8-5"
-         inkscape:label="text1"><tspan
+         id="text161"
+         inkscape:label="text1645266"><tspan
            sodipodi:role="line"
            x="1107.1407"
            y="1213.1201"
            id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-34">Палец щеткодержателя</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+         style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
          x="1612.1829"
          y="663.39801"
-         id="text1-60-8-26"
-         inkscape:label="text1"><tspan
+         id="text16"
+         inkscape:label="text1654352"><tspan
            sodipodi:role="line"
            x="1612.1829"
            y="663.39801"
@@ -657,7 +550,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1822.0881"
        y="822.55933"
        id="text17"
@@ -668,7 +561,7 @@
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-3-5">Траверса</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:inline;fill:#ffffff;fill-opacity:1"
+       style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1662.5498"
        y="890.24695"
        id="text18"
@@ -677,5 +570,194 @@
          x="1662.5498"
          y="890.24695"
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-9-9-3-3">Болт крепления траверсы</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer232131"
+     inkscape:label="Details"
+     style="opacity:0.604">
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+       id="1"
+       width="19.13998"
+       height="32.81599"
+       x="0.8538624"
+       y="171.76099"
+       inkscape:label="detail1" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+       id="2"
+       width="19.13998"
+       height="32.81599"
+       x="93.304047"
+       y="169.46211"
+       inkscape:label="detail2" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+       id="3"
+       width="19.13998"
+       height="32.81599"
+       x="223.48039"
+       y="137.04965"
+       inkscape:label="detail3" />
+    <g
+       id="431213"
+       inkscape:label="detail4"
+       style="opacity:1">
+      <rect
+         style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+         id="41plus4"
+         width="19.13998"
+         height="32.81599"
+         x="1291.1967"
+         y="181.27792"
+         inkscape:label="detail4124" />
+      <rect
+         style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+         id="4plus41"
+         width="19.13998"
+         height="32.81599"
+         x="268.14011"
+         y="139.30504"
+         inkscape:label="detail42141" />
+    </g>
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+       id="5"
+       width="19.13998"
+       height="32.81599"
+       x="316.66559"
+       y="137.95134"
+       inkscape:label="detail5" />
+    <g
+       id="6sdafdad"
+       inkscape:label="detail6"
+       style="opacity:1">
+      <rect
+         style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+         id="61plus6"
+         width="19.13998"
+         height="32.81599"
+         x="1108.0339"
+         y="131.10387"
+         inkscape:label="detail65464" />
+      <rect
+         style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+         id="6plus61"
+         width="19.13998"
+         height="32.81599"
+         x="415.63617"
+         y="95.641739"
+         inkscape:label="detail64335" />
+    </g>
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+       id="7"
+       width="19.13998"
+       height="32.81599"
+       x="596.4624"
+       y="148.93109"
+       inkscape:label="detail7" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
+       id="8"
+       width="19.13998"
+       height="32.81599"
+       x="1002.825"
+       y="183.34456"
+       inkscape:label="detail8" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.63378"
+       id="9"
+       width="19.13998"
+       height="31.336891"
+       x="1304.4745"
+       y="212.23613"
+       inkscape:label="detail9" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.925821"
+       id="10"
+       width="39.002159"
+       height="32.81599"
+       x="1315.9119"
+       y="236.67342"
+       inkscape:label="detail10" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.895284"
+       id="11"
+       width="36.471714"
+       height="32.81599"
+       x="548.79773"
+       y="968.39661"
+       inkscape:label="detail11" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.929474"
+       id="12"
+       width="39.310535"
+       height="32.81599"
+       x="548.23181"
+       y="1045.4353"
+       inkscape:label="detail12" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.938264"
+       id="13"
+       width="40.05759"
+       height="32.81599"
+       x="1148.0613"
+       y="905.94592"
+       inkscape:label="detail13" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.941757"
+       id="14"
+       width="40.356415"
+       height="32.81599"
+       x="1155.3896"
+       y="942.23059"
+       inkscape:label="detail14" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.950434"
+       id="15"
+       width="41.103474"
+       height="32.81599"
+       x="1442.7319"
+       y="984.82825"
+       inkscape:label="detail15" />
+    <g
+       id="165425"
+       inkscape:label="detail16"
+       style="opacity:1">
+      <rect
+         style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.948123"
+         id="16plus161"
+         width="40.903858"
+         height="32.81599"
+         x="1666.4066"
+         y="673.51636"
+         inkscape:label="detail1656463" />
+      <rect
+         style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.953009"
+         id="161plus16"
+         width="41.326458"
+         height="32.81599"
+         x="1209.722"
+         y="1153.9762"
+         inkscape:label="detail16464" />
+    </g>
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.940748"
+       id="17"
+       width="40.269958"
+       height="32.81599"
+       x="1879.9899"
+       y="830.04083"
+       inkscape:label="detail17" />
+    <rect
+       style="display:inline;fill:#2a7fff;stroke-width:0.953009;opacity:0"
+       id="18"
+       width="41.326458"
+       height="32.81599"
+       x="1876.2928"
+       y="898.70715"
+       inkscape:label="detail18" />
   </g>
 </svg>

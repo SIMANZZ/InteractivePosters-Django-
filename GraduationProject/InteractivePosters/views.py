@@ -31,12 +31,12 @@ DCmachinesimages_data = [
     {
         "name": "Двигатель постоянного тока",
         "imageSrc": '../media/images/DCmachines/Двигатель постоянного тока.jpg',
-        "image_adress": "none",
+        "image_adress": "DC_engine",
     },
     {
         "name": "Индуктор машины постоянного тока",
         "imageSrc": '../media/images/DCmachines/Индуктор машины постоянного тока.jpg',
-        "image_adress": "none",
+        "image_adress": "DC_machine_inductor",
     },
     {
         "name": "Коммутация якоря",
@@ -56,7 +56,7 @@ DCmachinesimages_data = [
     {
         "name": "Якорь машины постоянного тока",
         "imageSrc": '../media/images/DCmachines/Якорь машины постоянного тока.jpg',
-        "image_adress": "none",
+        "image_adress": "armature_of_the_DC_machine",
     },
 ]
 
@@ -89,7 +89,7 @@ ACmachinesimages_dataSync = [
     {
         "name": "Турбогенератор",
         "imageSrc": '../media/images/ACmachines/Sync/Турбогенератор.jpg',
-        "image_adress": "none",
+        "image_adress": "turbogenerator",
     },
 ]
 

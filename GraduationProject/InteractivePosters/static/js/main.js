@@ -248,34 +248,32 @@ document.addEventListener('DOMContentLoaded', () => {
             { buttonText: "Контроль знаний", action: '' }
         ];
 
-        formsData.forEach(({ buttonText, action }) => {
+        for (const { buttonText, action } of formsData) {
+            if(buttonText == 'Интерактивный плакат' && action == 'none_interactive'){
+                break;
+            }
             const form = document.createElement("form");
             form.action = action;
             form.name = data.image_adress;
-
+        
             const button = document.createElement("button");
             button.textContent = buttonText;
-            if (buttonText == "Контроль знаний") {
+        
+            if (buttonText === "Контроль знаний") {
                 button.id = 'knowledge-control' + counter;
                 button.name = data.image_adress;
                 buttonContainer.appendChild(button);
-            }
-            else if (buttonText == "Общий вид") {
-                button.id = 'common_button|'+data.imageSrc;
+            } else if (buttonText === "Общий вид") {
+                button.id = 'common_button|' + data.imageSrc;
                 form.appendChild(button);
                 buttonContainer.appendChild(form);
-            }
-            else if(buttonText == "Интерактивный плакат"){
+            } else if (buttonText === "Интерактивный плакат") {
                 form.id = 'form' + counter;
                 button.type = "submit";
                 form.appendChild(button);
                 buttonContainer.appendChild(form);
             }
-            // else {
-            //     form.appendChild(button);
-            //     buttonContainer.appendChild(form);
-            // }
-        });
+        }
 
         counter++;
 
