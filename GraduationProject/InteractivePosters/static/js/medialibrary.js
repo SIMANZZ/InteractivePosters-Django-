@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const videoSrc = event.target.href;
         videoPlayer.src = videoSrc;
-        videoPlayer.play();
     });
 
     function openModal() {

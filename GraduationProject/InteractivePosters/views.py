@@ -121,6 +121,7 @@ ACmachinesimages_dataAsync = [
     },
 ]
 
+
 def main(request):
     # Преобразование данных в формат JSON
     GeneralPrincipalsimages_json = json.dumps(GeneralPrincipalsimages_data)
@@ -164,16 +165,23 @@ def check_answer(request):
         machine_name = request.POST.get('machine_name', None)
         question_number = request.POST.get('question_number', None)
         answer = request.POST.get('answer', None)
+        print(question_number + " " + answer + " " + machine_name)
 
         if machine_name is not None and question_number is not None and answer is not None:
             machine = get_object_or_404(Machines, machine_name=machine_name)
-            answers = Answers.objects.filter(machinesID=machine)
             try:
-                answer_obj = answers[int(question_number) - 1]
-                if answer_obj.correct_answer == answer:
+                # Пробуем преобразовать question_number в целое число
+                question_number = int(question_number)
+                answer_obj = Answers.objects.get(machinesID=machine, question_number=question_number)
+                print(answer_obj)
+                print(answer_obj.correct_answer)
+
+                if answer_obj.correct_answer.lower() == answer.lower():
                     return JsonResponse({'message': 'success'}, status=200)
                 else:
                     return JsonResponse({'message': 'failed'}, status=200)
+            except Answers.DoesNotExist:
+                return JsonResponse({'message': 'Invalid question number'}, status=400)
             except (IndexError, ValueError):
                 return JsonResponse({'message': 'Invalid question number'}, status=400)
         else:

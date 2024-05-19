@@ -26,14 +26,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.84065425"
-     inkscape:cx="612.61809"
-     inkscape:cy="782.12892"
+     inkscape:cx="1093.1962"
+     inkscape:cy="759.52748"
      inkscape:window-width="3440"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer24" />
+     inkscape:current-layer="Details" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
@@ -1888,6 +1888,30 @@
      style="display:inline;opacity:0.6"
      transform="translate(1.7843245,1.1895497)">
     <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:1.10554"
+       id="1"
+       width="45.797661"
+       height="39.849915"
+       x="30.505005"
+       y="819.35223"
+       inkscape:label="detail1" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:1.10554"
+       id="2"
+       width="45.797661"
+       height="39.849915"
+       x="4.2221732"
+       y="692.94727"
+       inkscape:label="detail2" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff;stroke-width:1.10554"
+       id="3"
+       width="45.797661"
+       height="39.849915"
+       x="-3.3095076"
+       y="660.02252"
+       inkscape:label="detail3" />
+    <rect
        style="opacity:0;fill:#2a7fff"
        id="4"
        width="37.470814"
@@ -1895,6 +1919,14 @@
        x="111.81767"
        y="178.43245"
        inkscape:label="detail4" />
+    <rect
+       style="display:inline;opacity:0;fill:#2a7fff"
+       id="5"
+       width="37.470814"
+       height="39.849915"
+       x="166.92052"
+       y="174.15677"
+       inkscape:label="detail5" />
     <rect
        style="opacity:0;fill:#2a7fff"
        id="6"
@@ -2039,38 +2071,6 @@
        x="1584.5292"
        y="839.45746"
        inkscape:label="detail23" />
-    <rect
-       style="opacity:0;fill:#2a7fff;stroke-width:1.10554"
-       id="1"
-       width="45.797661"
-       height="39.849915"
-       x="30.505005"
-       y="819.35223"
-       inkscape:label="detail1" />
-    <rect
-       style="opacity:0;fill:#2a7fff;stroke-width:1.10554"
-       id="2"
-       width="45.797661"
-       height="39.849915"
-       x="4.2221732"
-       y="692.94727"
-       inkscape:label="detail2" />
-    <rect
-       style="opacity:0;fill:#2a7fff;stroke-width:1.10554"
-       id="3"
-       width="45.797661"
-       height="39.849915"
-       x="-3.3095076"
-       y="660.02252"
-       inkscape:label="detail3" />
-    <rect
-       style="opacity:0;fill:#2a7fff"
-       id="5"
-       width="37.470814"
-       height="39.849915"
-       x="166.92052"
-       y="174.15677"
-       inkscape:label="detail5" />
   </g>
   <g
      inkscape:groupmode="layer"

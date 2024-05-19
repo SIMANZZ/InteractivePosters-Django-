@@ -9,7 +9,7 @@ class Machines(models.Model):
 
 class Answers(models.Model):
     machinesID = models.ForeignKey(Machines, blank=False, on_delete=models.CASCADE)
-    question_number = models.IntegerField(max_length=3, blank=False, default=0)
+    question_number = models.IntegerField(blank=False)
     correct_answer = models.CharField(max_length=100, blank=False)
 
     def __str__(self):

@@ -8,10 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Асинхронный двигатель с короткозамкнутым ротором - интерактивный плакат</title>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/modal.css" %}">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 
 <body>
+    <div id="modalWindow" class="modal">
+        <div id="modalContent" class="modal-content">
+            <span class="close">×</span>
+            <!-- <div id="text">
+                <p id="p-modal"></p>
+            </div>
+            <div id="font-controls">
+                <button class="no-hover-effect" id="increase-font">Увеличить текст</button>
+                <button class="no-hover-effect" id="decrease-font">Уменьшить текст</button>
+            </div> -->
+        </div>
+    </div>
 </body>
 
 <script type="module" src="{% static "js/interactiveInteraction.js" %}"></script>

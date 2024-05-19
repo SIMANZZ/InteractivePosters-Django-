@@ -8,6 +8,8 @@ n = returnedCharacteristics[0];
 resultName = returnedCharacteristics[1];
 
 console.log(resultName);
+const fileName = resultName.match(/[^/]+$/)[0].replace('.svg', '');
+console.log(fileName);
 
 fetch(resultName)
     .then(response => response.text())
@@ -36,14 +38,19 @@ fetch(resultName)
         if (svgObject) {
             svgObject.addEventListener('mouseover', function (event) {
                 let id = event.target.id;
-                if (id > 0 && id < n) {
+                if (id > 0 && id < n || id.includes('plus')) {
                     svgObject.getElementById(id).style.cursor = 'pointer';
                 }
             });
             if (mode == "training") {
                 $(svgObject).click(function (event) {
                     let id = event.target.id;
-                    if (id > 0 && id < n) {
+                    if (id > 0 && id < n || id.includes('plus')) {
+                        let temp_id = id;
+                        if(id.includes('plus')){
+                            id = id.match(/\d+/g)[0];
+                            console.log(id);
+                        }
                         var answer = prompt("Введите ответ:");
                         if (answer !== null && answer !== "") {
                             $.ajax({
@@ -51,19 +58,20 @@ fetch(resultName)
                                 url: "/check_answer/", // Замените на URL вашего представления Django
                                 headers: { "X-CSRFToken": "{{ csrf_token }}" },
                                 data: {
-                                    'machine_name': "Ротор и статор турбогенератора",
+                                    'machine_name': fileName,
                                     'question_number': id, // Замените questionNumber на номер вопроса
                                     'answer': answer.toLowerCase(),
                                 },
                                 success: function (response) {
+                                    console.log(temp_id);
                                     var successResponse = response
-                                    alert(successResponse.message);
-                                    svgObject.getElementById(id).style.opacity = '0.6';
+                                    // alert(successResponse.message);
+                                    svgObject.getElementById(temp_id).style.opacity = '0.6';
                                     if (successResponse.message == 'success') {
-                                        svgObject.getElementById(id).style.fill = 'green';
+                                        svgObject.getElementById(temp_id).style.fill = 'green';
                                     }
                                     else {
-                                        svgObject.getElementById(id).style.fill = 'red';
+                                        svgObject.getElementById(temp_id).style.fill = 'red';
                                     }
                                 }
                             });
@@ -74,7 +82,12 @@ fetch(resultName)
             else if (mode == "control") {
                 $(svgObject).click(function (event) {
                     let id = event.target.id;
-                    if (id > 0 && id < n) {
+                    if (id > 0 && id < n || id.includes('plus')) {
+                        let temp_id = id;
+                        if(id.includes('plus')){
+                            id = id.match(/\d+/g)[0];
+                            console.log(id);
+                        }
                         var answer = prompt("Введите ответ:");
                         if (answer !== null && answer !== "") {
                             $.ajax({
@@ -82,13 +95,14 @@ fetch(resultName)
                                 url: "/check_answer/", // Замените на URL вашего представления Django
                                 headers: { "X-CSRFToken": "{{ csrf_token }}" },
                                 data: {
-                                    'machine_name': "Ротор и статор турбогенератора",
+                                    'machine_name': fileName,
                                     'question_number': id, // Замените questionNumber на номер вопроса
                                     'answer': answer.toLowerCase(),
                                 },
                                 success: function (response) {
+                                    console.log(temp_id);
                                     var successResponse = response
-                                    alert(successResponse.message);
+                                    // alert(successResponse.message);
                                     console.log(arr_temp);
                                     svgObject.getElementById(id).style.opacity = '0.6';
                                     if (Object.keys(arr_temp).length == n - 2) {
@@ -106,14 +120,14 @@ fetch(resultName)
                                             }
                                         }
                                         if (successResponse.message == 'success') {
-                                            svgObject.getElementById(id).style.fill = 'green';
+                                            svgObject.getElementById(temp_id).style.fill = 'green';
                                         }
                                         else {
-                                            svgObject.getElementById(id).style.fill = 'red';
+                                            svgObject.getElementById(temp_id).style.fill = 'red';
                                         }
                                     }
                                     else {
-                                        arr_temp[id] = successResponse.message;
+                                        arr_temp[temp_id] = successResponse.message;
                                     }
                                 }
                             });
