@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         success: function (response) {
             console.log(response);
             document.getElementById('button_ElectricMachines').click();
-            switch(response.category){
+            switch (response.category) {
                 case 'Async':
                     document.getElementById('button_Async').click();
                     break;
@@ -141,16 +141,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 container_navbar.style.display = 'flex';
             }
             else if (id == "training") {
-                setMode("training");
                 const parentContainer = document.getElementById(id).parentNode.parentNode;
                 console.log(parentContainer);
-                localStorage.setItem('svgName', parentContainer.id);
+                setMode("training", parentContainer.id);
             }
             else if (id == "control") {
-                setMode("control");
                 const parentContainer = document.getElementById(id).parentNode.parentNode;
                 console.log(parentContainer);
-                localStorage.setItem('svgName', parentContainer.id);
+                setMode("control", parentContainer.id);
             }
             else if (id.startsWith("common_button")) {
                 localStorage.setItem('image_src', id.split('|')[1]);
@@ -217,9 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById(id).parentNode.remove();
             }
         });
-        container_images.addEventListener('submit', function(event){
+        container_images.addEventListener('submit', function (event) {
             let id = event.target.id;
-            if (id.startsWith("form")){
+            if (id.startsWith("form")) {
                 event.preventDefault();
                 let name = document.getElementById(id).name;
                 console.log(name);
@@ -244,21 +242,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formsData = [
             { buttonText: "Общий вид", action: '/common/' },
-            { buttonText: "Интерактивный плакат", action: data.image_adress+"_interactive" },
+            { buttonText: "Интерактивный плакат", action: data.image_adress + "_interactive" },
             { buttonText: "Контроль знаний", action: '' }
         ];
 
         for (const { buttonText, action } of formsData) {
-            if(buttonText == 'Интерактивный плакат' && action == 'none_interactive'){
+            if (buttonText == 'Интерактивный плакат' && action == 'none_interactive') {
                 break;
             }
             const form = document.createElement("form");
             form.action = action;
             form.name = data.image_adress;
-        
+
             const button = document.createElement("button");
             button.textContent = buttonText;
-        
+
             if (buttonText === "Контроль знаний") {
                 button.id = 'knowledge-control' + counter;
                 button.name = data.image_adress;
@@ -330,12 +328,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 engineContainer.appendChild(engineItem);
             });
         }
+
+        var engineItems = document.querySelectorAll('.engine-item');
+        console.log(engineItems);
+        engineItems.forEach(function (item) {
+            item.addEventListener('mouseleave', handleMouseLeave);
+        });
     }
 
     function ImagesActive() {
         container_first.style.display = 'none';
         container_navbar.style.display = 'none';
         container_images.style.display = 'block';
+    }
+
+    function handleMouseLeave(event) {
+        // Находим контейнер с классом 'exam-container'
+        var examContainer = document.querySelector('.exam-container');
+
+        // Если контейнер найден
+        if (examContainer) {
+            // Находим кнопку, id которой начинается с 'backButton' и заканчивается числом
+            var backButton = examContainer.querySelector('button[id^="backButton"]');
+
+            // Если кнопка найдена
+            if (backButton) {
+                // Выполняем клик по кнопке
+                backButton.click();
+            } else {
+                console.log('Кнопка с id, начинающимся с "backButton", не найдена.');
+            }
+        } else {
+            console.log('Контейнер с классом "exam-container" и id "collectors" не найден.');
+        }
     }
 
     function extractNumber(str) {
@@ -345,7 +370,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return match ? parseInt(match[0]) : null;
     }
 
-    function setMode(value) {
+    function setMode(value, name) {
         localStorage.setItem('mode', value);
+        localStorage.setItem('svgName', name);
     }
 });

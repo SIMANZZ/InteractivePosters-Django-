@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const videoElement = document.createElement('video');
                 const modalObject = document.getElementById('modalWindow');
                 const modalContent = document.getElementById('modalContent');
+                const pModal = document.createElement('p');
                 const div = document.createElement('div');
 
                 document.querySelectorAll('[btn="openModalBtn"]').forEach(element => {
@@ -89,26 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(modals);
 
                 function openModal(modalID) {
-                    // switch (modalID) {
-                    //     case "video_obmotka":
-                    //         div.id = "video-player";
-                    //         modalContent.appendChild(div);
-                    //         // Устанавливаем атрибут controls для отображения элементов управления
-                    //         videoElement.setAttribute('controls', '');
-                    //         // Устанавливаем идентификатор элемента
-                    //         videoElement.id = 'player';
-                    //         div.appendChild(videoElement);
-                    //         videoElement.src = '../media/videos/Производство обмоток статоров турбогенераторов и гидрогенераторов.mp4';
-                    //         break;
-                    //     case "sheet":
-                    //         div.innerHTML = 'Обмотка ротора в электрической машине представляет собой проводящий элемент, который окружает ось ротора и' +
-                    //             'создает электромагнитное поле при прохождении через него электрического тока.';
-                    //         modalContent.appendChild(div);
-                    //         modalContent.style.maxWidth = '600px'; /* Ограничение ширины для удобочитаемости */
-                    //         modalContent.style.height = 'auto'; /* Автоматическая высота в зависимости от контента */
-                    //         modalContent.style.overflowY = 'auto';
-                    //         break;
-                    // }
                     if (modalID.includes("_video")) {
                         div.id = "video-player";
                         modalContent.appendChild(div);
@@ -119,6 +100,52 @@ document.addEventListener('DOMContentLoaded', () => {
                         div.appendChild(videoElement);
                         videoElement.src = document.getElementById(modalID).getAttribute('name');
                     }
+                    else if (modalID.includes("_text")) {
+                        // Создание элементов
+                        const textDiv = document.createElement('div');
+                        textDiv.id = 'text';
+
+                        pModal.id = 'p-modal';
+                        pModal.innerHTML = 'Обмотка ротора в электрической машине представляет собой проводящий элемент, который окружает ось ротора и' +
+                        'создает электромагнитное поле при прохождении через него электрического тока.';
+                        textDiv.appendChild(pModal);
+
+                        const fontControlsDiv = document.createElement('div');
+                        fontControlsDiv.id = 'font-controls';
+
+                        const increaseFontButton = document.createElement('button');
+                        increaseFontButton.classList.add('no-hover-effect');
+                        increaseFontButton.id = 'increase-font';
+                        increaseFontButton.textContent = 'Увеличить текст';
+                        fontControlsDiv.appendChild(increaseFontButton);
+
+                        const decreaseFontButton = document.createElement('button');
+                        decreaseFontButton.classList.add('no-hover-effect');
+                        decreaseFontButton.id = 'decrease-font';
+                        decreaseFontButton.textContent = 'Уменьшить текст';
+                        fontControlsDiv.appendChild(decreaseFontButton);
+
+                        // Добавление элементов в контейнер
+                        modalContent.appendChild(textDiv);
+                        modalContent.appendChild(fontControlsDiv);
+                        modalContent.style.maxWidth = '800px'; /* Ограничение ширины для удобочитаемости */
+                        modalContent.style.height = 'auto'; /* Автоматическая высота в зависимости от контента */
+                        modalContent.style.overflowY = 'auto';
+
+                        increaseFontButton.addEventListener('click', function () {
+                            changeFontSize(pModal, 2); // Увеличить размер шрифта на 2px
+                        });
+                    
+                        decreaseFontButton.addEventListener('click', function () {
+                            changeFontSize(pModal, -2); // Уменьшить размер шрифта на 2px
+                        });
+                    
+                        function changeFontSize(element, change) {
+                            const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+                            const newSize = parseFloat(currentSize) + change;
+                            element.style.fontSize = newSize + 'px';
+                        }
+                    }
                     modalObject.style.display = 'flex';
                 }
 
@@ -128,19 +155,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (videoPlayer != null) {
                         videoPlayer.src = "";
                     }
-                    // Первый дочерний элемент родительского элемента
-                    let child = modalContent.firstElementChild;
-
+                
+                    // Создаем массив из дочерних элементов, чтобы избежать изменения списка во время итерации
+                    let children = Array.from(modalContent.children);
+                
                     // Проходим по всем дочерним элементам
-                    while (child) {
+                    children.forEach(child => {
                         // Если это не элемент <span>, то удаляем его
                         if (child.tagName !== 'SPAN') {
                             modalContent.removeChild(child);
                         }
-
-                        // Переходим к следующему дочернему элементу
-                        child = child.nextElementSibling;
-                    }
+                    });
+                
+                    // Дополнительные действия для очистки и скрытия модального окна
                     div.innerHTML = '';
                     div.id = '';
                     modalContent.style.cssText = '';

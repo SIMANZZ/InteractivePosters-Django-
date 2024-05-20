@@ -135,39 +135,6 @@ p {
     margin: 0 auto;
 }
 
-#p-modal {
-    all: unset;
-    font-family: 'Montserrat', sans-serif;;
-}
-
 #modalContent {
-    all: unset;
-    display: flex;
-    flex-direction: column;
-    background-color: #fefefe;
-    margin: 0 auto;
-    padding: 5px 20px 20px 20px;
     max-width: 800px;
-    border: 1px solid #888;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    height: auto;
-    overflow-y: auto;
-    text-align: justify;
-    /* Выравнивание текста по ширине */
-}
-
-#font-controls {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-}
-
-#font-controls button {
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
 }
