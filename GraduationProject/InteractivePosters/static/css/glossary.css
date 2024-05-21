@@ -16,10 +16,10 @@ body {
 p {
     color: white;
     text-shadow:
-        -0.6px -0.6px 0 red,
-        0.6px -0.6px 0 red,
-        -0.6px 0.6px 0 red,
-        0.6px 0.6px 0 red;
+        -0.6px -0.6px 0 black,
+        0.6px -0.6px 0 black,
+        -0.6px 0.6px 0 black,
+        0.6px 0.6px 0 black;
     font-size: 18pt;
 }
 
@@ -27,7 +27,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 300px;
-    background-color: red;
+    background-color: #4CAF50;
     color: white;
     border: 0;
     left: 50%;
@@ -108,7 +108,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 300px;
-    background-color: red;
+    background-color: #4CAF50;
     color: white;
     border: 0;
     left: 50%;

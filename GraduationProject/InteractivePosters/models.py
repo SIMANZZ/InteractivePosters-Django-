@@ -14,3 +14,10 @@ class Answers(models.Model):
 
     def __str__(self):
         return self.correct_answer
+
+class Texts(models.Model):
+    name = models.CharField(max_length=50, blank=False)
+    definition = models.CharField(max_length=1000, blank=False)
+
+    def __str__(self):
+        return self.name

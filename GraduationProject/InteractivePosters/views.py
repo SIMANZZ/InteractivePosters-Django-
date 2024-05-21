@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from .models import Answers, Machines
+from .models import Answers, Machines, Texts
 import json
 
 GeneralPrincipalsimages_data = [
@@ -263,5 +263,21 @@ def category_proccessing(request):
         else:
             return JsonResponse({'error': 'No category found in session'}, status=400)
 
+    else:
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+@csrf_exempt
+def show_modalText(request):
+    if request.method == 'POST':
+        name = request.POST.get('name', None)
+        if name:
+            try:
+                texts_obj = Texts.objects.get(name=name)
+                print(texts_obj)
+                return JsonResponse({'message': texts_obj.definition}, status=200)
+            except Texts.DoesNotExist:
+                return JsonResponse({'error': 'Text not found'}, status=404)
+        else:
+            return JsonResponse({'error': 'Missing parameters'}, status=400)
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)

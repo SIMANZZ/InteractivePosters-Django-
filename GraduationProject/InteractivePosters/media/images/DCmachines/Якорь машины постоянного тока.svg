@@ -27,7 +27,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1"
      inkscape:cx="1039"
-     inkscape:cy="783.5"
+     inkscape:cy="784.5"
      inkscape:window-width="3440"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
@@ -58,43 +58,43 @@
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Detail3"
+     id="layer3_1"
+     inkscape:label="Detail3_1"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer31"
-     inkscape:label="Detail31"
+     id="layer3_2"
+     inkscape:label="Detail3_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="Detail4"
+     id="layer4_1"
+     inkscape:label="Detail4_1"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer41"
-     inkscape:label="Detail41"
+     id="layer4_2"
+     inkscape:label="Detail4_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="Detail5"
+     id="layer5_1"
+     inkscape:label="Detail5_1"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer51"
-     inkscape:label="Detail51"
+     id="layer5_2"
+     inkscape:label="Detail5_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="Detail6"
+     id="layer6_1"
+     inkscape:label="Detail6_1"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer61"
-     inkscape:label="Detail61"
+     id="layer6_2"
+     inkscape:label="Detail6_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
@@ -113,23 +113,23 @@
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer10"
-     inkscape:label="Detail10"
+     id="layer10_1"
+     inkscape:label="Detail10_1"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer101"
-     inkscape:label="Detail101"
+     id="layer10_2"
+     inkscape:label="Detail10_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer11"
-     inkscape:label="Detail11"
+     id="layer11_1"
+     inkscape:label="Detail11_1"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
-     id="layer111"
-     inkscape:label="Detail111"
+     id="layer11_2"
+     inkscape:label="Detail11_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
@@ -188,68 +188,68 @@
        inkscape:label="rect2" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:7.77855"
-       id="rect3"
+       id="rect3_1"
        width="910.02478"
        height="70.325523"
        x="3"
        y="146"
-       inkscape:label="rect3" />
+       inkscape:label="rect3_1" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:7.77855"
-       id="rect31"
+       id="rect3_2"
        width="910.02478"
        height="70.325523"
        x="621"
        y="983"
-       inkscape:label="rect31" />
+       inkscape:label="rect3_2" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:7.88889"
-       id="rect4"
+       id="rect4_1"
        width="936.02478"
        height="70.325523"
        x="535"
        y="259"
-       inkscape:label="rect4" />
+       inkscape:label="rect4_1" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:7.88889"
-       id="rect41"
+       id="rect4_2"
        width="936.02478"
        height="70.325523"
        x="587"
        y="1022"
-       inkscape:label="rect41" />
+       inkscape:label="rect4_2" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:6.23582"
-       id="rect5"
+       id="rect5_1"
        width="546.02478"
        height="75.325523"
        x="585"
        y="88"
-       inkscape:label="rect5" />
+       inkscape:label="rect5_1" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:6.23582"
-       id="rect51"
+       id="rect5_2"
        width="546.02478"
        height="75.325523"
        x="953"
        y="1061"
-       inkscape:label="rect51" />
+       inkscape:label="rect5_2" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:13.3126"
-       id="rect6"
+       id="rect6_1"
        width="1127.0248"
        height="166.32552"
        x="549"
        y="205"
-       inkscape:label="rect6" />
+       inkscape:label="rect6_1" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:13.3126"
-       id="rect61"
+       id="rect6_2"
        width="1127.0248"
        height="166.32552"
        x="392"
        y="1043"
-       inkscape:label="rect61" />
+       inkscape:label="rect6_2" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:7.80386"
        id="rect7"
@@ -276,29 +276,29 @@
        inkscape:label="rect9" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:12.1052"
-       id="rect10"
+       id="rect10_1"
        width="931.86328"
        height="166.32552"
        x="499.68481"
        y="209.44006"
-       inkscape:label="rect10" />
+       inkscape:label="rect10_1" />
     <g
        inkscape:groupmode="layer"
-       id="rect101"
-       inkscape:label="rect101"
+       id="rect10_2"
+       inkscape:label="rect10_2"
        style="display:inline;opacity:0" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:7.99324"
-       id="rect11"
+       id="rect11_1"
        width="811.02478"
        height="83.325516"
        x="535"
        y="311"
-       inkscape:label="rect11" />
+       inkscape:label="rect11_1" />
     <g
        inkscape:groupmode="layer"
-       id="rect111"
-       inkscape:label="rect111"
+       id="rect11_2"
+       inkscape:label="rect11_2"
        style="display:inline;opacity:0" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:13.1999"
@@ -392,8 +392,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="5.6000543"
        y="225.79892"
-       id="text3"
-       inkscape:label="text3"
+       id="text3_1"
+       inkscape:label="text3_1"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="5.6000543"
@@ -405,8 +405,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="567.7926"
        y="1145.8859"
-       id="text31"
-       inkscape:label="text31"
+       id="text3_2"
+       inkscape:label="text3_2"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="567.7926"
@@ -418,8 +418,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="489.55865"
        y="350.01617"
-       id="text4"
-       inkscape:label="text4"
+       id="text4_1"
+       inkscape:label="text4_1"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="489.55865"
@@ -431,8 +431,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="536.86292"
        y="1188.7572"
-       id="text41"
-       inkscape:label="text41"
+       id="text4_2"
+       inkscape:label="text4_2"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="536.86292"
@@ -444,8 +444,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="535.04346"
        y="162.04141"
-       id="text5"
-       inkscape:label="text5"
+       id="text5_1"
+       inkscape:label="text5_1"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="535.04346"
@@ -457,8 +457,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="869.81183"
        y="1231.6287"
-       id="text51"
-       inkscape:label="text51"
+       id="text5_2"
+       inkscape:label="text5_2"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="869.81183"
@@ -470,8 +470,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="502.29443"
        y="290.6557"
-       id="text6"
-       inkscape:label="text6"
+       id="text6_1"
+       inkscape:label="text6_1"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="502.29443"
@@ -488,8 +488,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="359.47205"
        y="1211.8418"
-       id="text61"
-       inkscape:label="text61"
+       id="text6_2"
+       inkscape:label="text6_2"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="359.47205"
@@ -545,8 +545,8 @@
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="457.43256"
        y="296.31381"
-       id="text10"
-       inkscape:label="text10"
+       id="text10_1"
+       inkscape:label="text10_1"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="457.43256"
@@ -560,16 +560,16 @@
          id="tspan2">частях обмотки</tspan></text>
     <g
        inkscape:groupmode="layer"
-       id="text101"
-       inkscape:label="text101"
+       id="text10_2"
+       inkscape:label="text10_2"
        style="display:none" />
     <text
        xml:space="preserve"
        style="font-size:87.6634px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1;stroke-width:4.10922"
        x="489.55869"
        y="407.17807"
-       id="text11"
-       inkscape:label="text11"
+       id="text11_1"
+       inkscape:label="text11_1"
        transform="scale(1.0992675,0.90969668)"><tspan
          sodipodi:role="line"
          x="489.55869"
@@ -578,8 +578,8 @@
          id="tspan1-2">Нажимные втулки</tspan></text>
     <g
        inkscape:groupmode="layer"
-       id="text111"
-       inkscape:label="text111"
+       id="text11_2"
+       inkscape:label="text11_2"
        style="display:none" />
     <text
        xml:space="preserve"
@@ -706,68 +706,68 @@
        inkscape:label="detail2" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.358341"
-       id="3plus31"
+       id="3_1plus3_2"
        width="10.621863"
        height="18.051428"
        x="505.59802"
        y="237.83098"
-       inkscape:label="detail3" />
+       inkscape:label="detail3_1plus3_2" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.358341"
-       id="31plus3"
+       id="3_2plus3_1"
        width="10.621863"
        height="18.051428"
        x="1542.7379"
        y="1001.3864"
-       inkscape:label="detail31" />
+       inkscape:label="detail3_2plus3_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.358341"
-       id="4plus41"
+       id="4_1plus4_2"
        width="10.621863"
        height="18.051428"
        x="510.31818"
        y="287.17471"
-       inkscape:label="detail4" />
+       inkscape:label="detail4_1plus4_2" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.358341"
-       id="41plus4"
+       id="4_2plus4_1"
        width="10.621863"
        height="18.051428"
        x="1550.946"
        y="1054.9745"
-       inkscape:label="detail41" />
+       inkscape:label="detail4_2plus4_1" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.358341"
-       id="5plus51"
+       id="5_1plus5_2"
        width="10.621863"
        height="18.051428"
        x="551.48297"
        y="122.299"
-       inkscape:label="detail5" />
+       inkscape:label="detail5_1plus5_2" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.358341"
-       id="51plus5"
+       id="5_2plus5_1"
        width="10.621863"
        height="18.051428"
        x="1528.8253"
        y="1098.674"
-       inkscape:label="detail51" />
+       inkscape:label="detail5_2plus5_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.358341"
-       id="6plus51"
+       id="6_1plus6_2"
        width="10.621863"
        height="18.051428"
        x="524.13849"
        y="373.00284"
-       inkscape:label="detail6" />
+       inkscape:label="detail6_1plus6_2" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.358341"
-       id="61plus6"
+       id="6_2plus6_1"
        width="10.621863"
        height="18.051428"
        x="1544.3452"
        y="1135.674"
-       inkscape:label="detail61" />
+       inkscape:label="detail6_2plus6_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.358341"
        id="7"
@@ -794,36 +794,36 @@
        inkscape:label="detail9" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.520407"
-       id="10plus101"
+       id="10_1plus10_2"
        width="22.402405"
        height="18.051428"
        x="779.94885"
        y="525.38635"
-       inkscape:label="detail10" />
+       inkscape:label="detail10_1plus10_2" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.522802"
-       id="101plus10"
+       id="10_2plus10_1"
        width="22.609079"
        height="18.051428"
        x="1354.2003"
        y="386.53906"
-       inkscape:label="detail101" />
+       inkscape:label="detail10_2plus10_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.485638"
-       id="11plus111"
+       id="11_1plus11_2"
        width="19.508938"
        height="18.051428"
        x="788.71234"
        y="483.42615"
-       inkscape:label="detail11" />
+       inkscape:label="detail11_1plus11_2" />
     <rect
        style="opacity:0;display:inline;fill:#2a7fff;stroke-width:0.469951"
-       id="111plus11"
+       id="11_2plus11_1"
        width="18.268881"
        height="18.051428"
        x="1312.7294"
        y="407.4581"
-       inkscape:label="detail111" />
+       inkscape:label="detail11_2plus11_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.508263"
        id="12"

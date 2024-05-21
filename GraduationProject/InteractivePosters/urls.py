@@ -14,5 +14,6 @@ urlpatterns = [
                   path('glossary/', glossary, name='glossary'),
                   path('check_symbol/', check_symbol, name='check_symbol'),
                   path('show_definition/', show_definition, name='show_definition'),
-                  path('category_proccessing/', category_proccessing, name='toImage')
+                  path('category_proccessing/', category_proccessing, name='category_proccessing'),
+                  path('show_modalText/', show_modalText, name='show_modalText')
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -38,20 +38,25 @@ fetch(resultName)
         if (svgObject) {
             svgObject.addEventListener('mouseover', function (event) {
                 let id = event.target.id;
-                if (id > 0 && id < n || id.includes('plus')) {
-                    svgObject.getElementById(id).style.cursor = 'pointer';
+                if (id > 0 && id < n || id.includes('plus') || (id.includes("_") && !id.includes("_video") && !id.includes("_text"))) {
+                    if (mode == "control" && canAddKey(arr_temp, id)) {
+                        svgObject.getElementById(id).style.cursor = 'pointer';
+                    }
+                    else if (mode == "training") {
+                        svgObject.getElementById(id).style.cursor = 'pointer';
+                    }
+                    else {
+                        svgObject.getElementById(id).style.cursor = 'default';
+                    }
                 }
             });
             if (mode == "training") {
                 $(svgObject).click(async function (event) {
                     let id = event.target.id;
-                    if (id > 0 && id < n || id.includes('plus')) {
+                    if (id > 0 && id < n || id.includes('plus') || (id.includes("_") && !id.includes("_video") && !id.includes("_text"))) {
                         let temp_id = id;
-                        if(id.includes('plus')){
+                        if (id.includes('plus')) {
                             id = id.match(/\d+/g)[0];
-                            if(id.endsWith('1') && id > 25){
-                                id = id[id.length - 2];
-                            }
                             console.log(id);
                         }
                         // var answer = prompt("Введите ответ:");
@@ -70,7 +75,6 @@ fetch(resultName)
                                 success: function (response) {
                                     console.log(temp_id);
                                     var successResponse = response
-                                    // alert(successResponse.message);
                                     svgObject.getElementById(temp_id).style.opacity = '0.6';
                                     if (successResponse.message == 'success') {
                                         svgObject.getElementById(temp_id).style.fill = 'green';
@@ -87,9 +91,9 @@ fetch(resultName)
             else if (mode == "control") {
                 $(svgObject).click(async function (event) {
                     let id = event.target.id;
-                    if (id > 0 && id < n || id.includes('plus')) {
+                    if ((id > 0 && id < n || id.includes('plus') || (id.includes("_") && !id.includes("_video") && !id.includes("_text"))) && canAddKey(arr_temp, id)) {
                         let temp_id = id;
-                        if(id.includes('plus')){
+                        if (id.includes('plus') || id.includes("_")) {
                             id = id.match(/\d+/g)[0];
                             console.log(id);
                         }
@@ -109,10 +113,9 @@ fetch(resultName)
                                 success: function (response) {
                                     console.log(temp_id);
                                     var successResponse = response
-                                    // alert(successResponse.message);
                                     console.log(arr_temp);
                                     svgObject.getElementById(temp_id).style.opacity = '0.6';
-                                    if (Object.keys(arr_temp).length == n - 1) {
+                                    if (Object.keys(arr_temp).length == n - 2) {
                                         // Итерируемся по свойствам словаря
                                         for (var key in arr_temp) {
                                             // Проверяем, является ли свойство собственным свойством объекта (не унаследованным)
@@ -149,27 +152,53 @@ fetch(resultName)
                 var closeBtn = document.querySelector(".close");
                 var submitBtn = document.getElementById("submitPrompt");
                 var inputField = document.getElementById("promptInput");
-        
+
                 modal.style.display = "block";
-        
-                closeBtn.onclick = function() {
+
+                closeBtn.onclick = function () {
                     modal.style.display = "none";
                     resolve(""); // Возвращает пустую строку, если окно закрыто
                 }
-        
-                // window.onclick = function(event) {
-                //     if (event.target == modal) {
-                //         modal.style.display = "none";
-                //         resolve(""); // Возвращает пустую строку, если окно закрыто кликом вне его
-                //     }
-                // }
-        
-                submitBtn.onclick = function() {
+                submitBtn.onclick = function () {
                     var answer = inputField.value;
                     modal.style.display = "none";
+                    inputField.value = "";
                     resolve(answer); // Возвращает введенное значение
                 }
             });
+        }
+        // Функция для проверки, можно ли добавить новый ключ
+        function canAddKey(dict, newKey) {
+            // Если новый ключ содержит "plus"
+            if (newKey.includes('plus')) {
+                let newParts = newKey.split('plus').sort();
+                for (let key in dict) {
+                    if (key.includes('plus')) {
+                        let existingParts = key.split('plus').sort();
+                        if (existingParts.toString() === newParts.toString()) {
+                            return false;
+                        }
+                    }
+                }
+            } else {
+                // Новый ключ без "plus"
+                let parts = newKey.split('_');
+                if (parts.length === 1) {
+                    // Для ключей без "_"
+                    if (dict.hasOwnProperty(newKey)) {
+                        return false;
+                    }
+                } else {
+                    // Для ключей с "_"
+                    let prefix = parts[0];
+                    for (let key in dict) {
+                        if (key.startsWith(prefix + '_') || key === prefix) {
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
         }
     })
     .catch(error => {

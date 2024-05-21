@@ -27,13 +27,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.82935648"
      inkscape:cx="674.01656"
-     inkscape:cy="727.67262"
+     inkscape:cy="728.87837"
      inkscape:window-width="3440"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer7" />
+     inkscape:current-layer="layer14" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
@@ -248,8 +248,8 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="Detail7"
+     id="layer7_1"
+     inkscape:label="Detail7_1"
      style="display:inline;opacity:0">
     <path
        style="fill:#ff0000"
@@ -330,8 +330,8 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer71"
-     inkscape:label="Detail71"
+     id="layer7_2"
+     inkscape:label="Detail7_2"
      style="opacity:0" />
   <g
      inkscape:groupmode="layer"
@@ -345,8 +345,8 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer9"
-     inkscape:label="Detail9"
+     id="layer9_1"
+     inkscape:label="Detail9_1"
      style="display:inline;opacity:0">
     <path
        style="display:inline;fill:#ff0000"
@@ -359,8 +359,8 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer91"
-     inkscape:label="Detail91"
+     id="layer9_2"
+     inkscape:label="Detail9_2"
      style="opacity:0">
     <path
        style="display:inline;opacity:1;fill:#ff0000"
@@ -446,16 +446,16 @@
        inkscape:label="rect6" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:2.41232"
-       id="rect7"
+       id="rect7_1"
        width="304.90686"
        height="20.187328"
        x="1581.562"
        y="677.50165"
-       inkscape:label="rect7" />
+       inkscape:label="rect7_1" />
     <g
        inkscape:groupmode="layer"
-       id="rect71"
-       inkscape:label="rect71"
+       id="rect7_2"
+       inkscape:label="rect7_2"
        style="opacity:0" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:2.24278"
@@ -467,16 +467,16 @@
        inkscape:label="rect8" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:2.32822"
-       id="rect9"
+       id="rect9_1"
        width="284.01825"
        height="20.187328"
        x="1360.532"
        y="945.99249"
-       inkscape:label="rect9" />
+       inkscape:label="rect9_1" />
     <g
        inkscape:groupmode="layer"
-       id="rect91"
-       inkscape:label="rect91"
+       id="rect9_2"
+       inkscape:label="rect9_2"
        style="opacity:0" />
     <rect
        style="display:inline;opacity:0;fill:#000000;stroke-width:3.16761"
@@ -570,16 +570,16 @@
        style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1583.2969"
        y="694.32257"
-       id="text7"
-       inkscape:label="text7"><tspan
+       id="text7_1"
+       inkscape:label="text7_1"><tspan
          sodipodi:role="line"
          x="1583.2969"
          y="694.32257"
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-8">Выводы катушки возбуждения</tspan></text>
     <g
        inkscape:groupmode="layer"
-       id="text71"
-       inkscape:label="text71"
+       id="text7_2"
+       inkscape:label="text7_2"
        style="display:none" />
     <text
        xml:space="preserve"
@@ -597,16 +597,16 @@
        style="font-size:21.3333px;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';display:none;fill:#ffffff;fill-opacity:1"
        x="1362.2668"
        y="962.81342"
-       id="text9"
-       inkscape:label="text9"><tspan
+       id="text9_1"
+       inkscape:label="text9_1"><tspan
          sodipodi:role="line"
          x="1362.2668"
          y="962.81342"
          id="tspan663-6-1-9-7-8-6-8-0-9-2-6-3-2-3-2-5-2-2-7-48">Наружная изоляция катушки</tspan></text>
     <g
        inkscape:groupmode="layer"
-       id="text91"
-       inkscape:label="text91"
+       id="text9_2"
+       inkscape:label="text9_2"
        style="display:none" />
     <text
        xml:space="preserve"
@@ -690,20 +690,20 @@
        inkscape:label="detail6" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
-       id="7plus71"
+       id="7_1plus7_2"
        width="19.13998"
        height="32.81599"
        x="1625.9193"
        y="707.40149"
-       inkscape:label="detail7" />
+       inkscape:label="detail7_1plus7_2" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
-       id="71plus7"
+       id="7_2plus7_1"
        width="19.13998"
        height="32.81599"
        x="1006.5541"
        y="1037.8899"
-       inkscape:label="detail71" />
+       inkscape:label="detail7_2plus7_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
        id="8"
@@ -714,20 +714,20 @@
        inkscape:label="detail8" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
-       id="9plus91"
+       id="9_1plus9_2"
        width="19.13998"
        height="32.81599"
        x="1334.0188"
        y="931.95685"
-       inkscape:label="detail9" />
+       inkscape:label="detail9_1plus9_2" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.648565"
-       id="91plus9"
+       id="9_2plus9_1"
        width="19.13998"
        height="32.81599"
        x="1424.7123"
        y="1268.0432"
-       inkscape:label="detail91" />
+       inkscape:label="detail9_2plus9_1" />
     <rect
        style="display:inline;opacity:0;fill:#2a7fff;stroke-width:0.950914"
        id="10"

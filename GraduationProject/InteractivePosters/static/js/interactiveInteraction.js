@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let id = event.target.id
                     if (id.includes('plus')) {
                         // Находим все числа в строке с помощью регулярного выражения
-                        let numbers = id.match(/\d+/g);
+                        let numbers = id.split("plus");
                         svgObject.getElementById('layer' + numbers[0]).style.opacity = '0.5';
                         svgObject.getElementById('rect' + numbers[0]).style.opacity = '0.6';
                         svgObject.getElementById('text' + numbers[0]).style.display = 'inline';
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         svgObject.getElementById('rect' + numbers[1]).style.opacity = '0.6';
                         svgObject.getElementById('text' + numbers[1]).style.display = 'inline';
                     }
-                    else if (id > 0 && id < n) {
+                    else if (id > 0 && id < n || (id.includes("_") && !id.includes("layer") && !id.includes("rect") && !id.includes("text") && !id.includes("plus") && !id.includes("_video") && !id.includes("_text"))) {
                         svgObject.getElementById('layer' + id).style.opacity = '0.5';
                         svgObject.getElementById('rect' + id).style.opacity = '0.6';
                         svgObject.getElementById('text' + id).style.display = 'inline';
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let id = event.target.id
                     if (id.includes('plus')) {
                         // Находим все числа в строке с помощью регулярного выражения
-                        let numbers = id.match(/\d+/g);
+                        let numbers = id.split("plus");
                         svgObject.getElementById('layer' + numbers[0]).style.opacity = '0';
                         svgObject.getElementById('rect' + numbers[0]).style.opacity = '0';
                         svgObject.getElementById('text' + numbers[0]).style.display = 'none';
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         svgObject.getElementById('rect' + numbers[1]).style.opacity = '0';
                         svgObject.getElementById('text' + numbers[1]).style.display = 'none';
                     }
-                    if (id > 0 && id < n) {
+                    if (id > 0 && id < n || (id.includes("_") && !id.includes("layer") && !id.includes("rect") && !id.includes("text") && !id.includes("plus") && !id.includes("_video") && !id.includes("_text"))) {
                         svgObject.getElementById('layer' + id).style.opacity = '0';
                         svgObject.getElementById('rect' + id).style.opacity = '0';
                         svgObject.getElementById('text' + id).style.display = 'none';
@@ -101,13 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
                         videoElement.src = document.getElementById(modalID).getAttribute('name');
                     }
                     else if (modalID.includes("_text")) {
+                        console.log(modalID);
                         // Создание элементов
                         const textDiv = document.createElement('div');
                         textDiv.id = 'text';
 
                         pModal.id = 'p-modal';
-                        pModal.innerHTML = 'Обмотка ротора в электрической машине представляет собой проводящий элемент, который окружает ось ротора и' +
-                        'создает электромагнитное поле при прохождении через него электрического тока.';
+                        $.ajax({
+                            type: "POST",
+                            url: "/show_modalText/", // Замените на URL вашего представления Django
+                            headers: { "X-CSRFToken": "{{ csrf_token }}" },
+                            data: {
+                                'name': modalID,
+                            },
+                            success: function (response) {
+                                console.log(response);
+                                pModal.innerHTML = response["message"];
+                            }
+                        });
                         textDiv.appendChild(pModal);
 
                         const fontControlsDiv = document.createElement('div');
@@ -135,11 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         increaseFontButton.addEventListener('click', function () {
                             changeFontSize(pModal, 2); // Увеличить размер шрифта на 2px
                         });
-                    
+
                         decreaseFontButton.addEventListener('click', function () {
                             changeFontSize(pModal, -2); // Уменьшить размер шрифта на 2px
                         });
-                    
+
                         function changeFontSize(element, change) {
                             const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
                             const newSize = parseFloat(currentSize) + change;
@@ -155,10 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (videoPlayer != null) {
                         videoPlayer.src = "";
                     }
-                
+
                     // Создаем массив из дочерних элементов, чтобы избежать изменения списка во время итерации
                     let children = Array.from(modalContent.children);
-                
+
                     // Проходим по всем дочерним элементам
                     children.forEach(child => {
                         // Если это не элемент <span>, то удаляем его
@@ -166,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             modalContent.removeChild(child);
                         }
                     });
-                
+
                     // Дополнительные действия для очистки и скрытия модального окна
                     div.innerHTML = '';
                     div.id = '';

@@ -3,3 +3,4 @@ from .models import *
 
 admin.site.register(Machines)
 admin.site.register(Answers)
+admin.site.register(Texts)

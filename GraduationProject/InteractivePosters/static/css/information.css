@@ -1,5 +1,5 @@
 div{
-    background-color: rgb(87, 87, 87, 0.6);
+    background-color: rgba(52, 52, 52, 0.6);
     width: 1600px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -9,7 +9,7 @@ div{
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 32pt;
     text-align: justify;
-    padding: 0px 8px 0px 8px;
+    padding: 0px 10px 0px 10px;
 }
 
 body{
@@ -24,8 +24,8 @@ body{
 p{
     color: white;
     text-shadow:
-        -0.5px -0.5px 0 red,
-        0.5px -0.5px 0 red,
-        -0.5px 0.5px 0 red,
-        0.5px 0.5px 0 red;
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
 }

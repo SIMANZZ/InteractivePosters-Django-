@@ -23,7 +23,7 @@ export function characteristicByName(){
     switch (codeName) {
         case 'rotor_and_stator_of_turbogenerator':
             resultName = rotor_and_stator_of_turbogenerator;
-            n = 22;
+            n = 21;
             break;
         case 'collectors':
             resultName = collectors;

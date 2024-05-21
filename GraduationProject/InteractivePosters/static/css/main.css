@@ -13,7 +13,7 @@
 }
 
 p{
-    color: red;
+    color: white;
     text-shadow:
         -0.3px -0.3px 0 black,
         0.3px -0.3px 0 black,
@@ -74,7 +74,7 @@ button{
 }
 
 .this button{
-    background-color: red;
+    background-color: #4CAF50;
     color: white;
     border: 0;
     left: 50%;
@@ -93,7 +93,7 @@ button{
 
 .this button:hover {
     transform: scale(1.1);
-    background-color: #ff6363;
+    background-color: #45a049;
 }
 
 .container-images{
@@ -135,7 +135,7 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 500px;
-    background-color: red;
+    background-color: #4CAF50;
     color: white;
     border: 0;
     left: 50%;
@@ -160,7 +160,7 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 300px;
-    background-color: red;
+    background-color: #4CAF50;
     color: white;
     border: 0;
     left: 50%;
@@ -180,7 +180,7 @@ button{
 
 button:hover {
     transform: scale(0.9);
-    background-color: #ff6363;
+    background-color: #45a049;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -191,7 +191,7 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: 700;
-    color: red;
+    color: white;
     text-shadow:
         -0.3px -0.3px 0 black,
         0.3px -0.3px 0 black,
@@ -243,7 +243,7 @@ button:hover {
 .navbar button{
     font-size: 24px;
     width: 150px;
-    background-color: red;
+    background-color: #4CAF50;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -255,7 +255,7 @@ button:hover {
 
 .navbar button:hover{
     transform: scale(0.9);
-    background-color: #ff6363;
+    background-color: #45a049;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);

@@ -14,7 +14,7 @@
 
 button:not(.no-hover-effect):hover {
     transform: scale(0.9);
-    background-color: #ff6363;
+    background-color: #45a049;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
