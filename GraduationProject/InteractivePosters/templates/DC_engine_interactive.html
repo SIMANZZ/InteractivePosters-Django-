@@ -8,12 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Двигатель постоянного тока</title>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/modal.css" %}">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 
 <body>
+    <div id="modalWindow" class="modal">
+        <div id="modalContent" class="modal-content">
+            <span class="close">×</span>
+        </div>
+    </div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="module" src="{% static "js/interactiveInteraction.js" %}"></script>
 
 </html>

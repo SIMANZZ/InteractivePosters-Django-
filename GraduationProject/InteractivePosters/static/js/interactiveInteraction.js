@@ -63,8 +63,45 @@ document.addEventListener('DOMContentLoaded', () => {
             function CODE_FOR(name_of_image) {
                 switch (name_of_image) {
                     case 'rotor_and_stator_of_turbogenerator':
+                        ModalInteraction();
                         break;
                     case 'async_engine_with_short_circuited_rotor':
+                        ModalInteraction();
+                        break;
+                    case 'async_engine_with_phase_rotor':
+                        ModalInteraction();
+                        break;
+                    case 'short_circuited_async_engine_rotors':
+                        ModalInteraction();
+                        break;
+                    case 'async_engine_stator':
+                        ModalInteraction();
+                        break;
+                    case 'phase_rotor_of_an_async_engine':
+                        ModalInteraction();
+                        break;
+                    case 'collectors':
+                        ModalInteraction();
+                        break;
+                    case 'sync_engine_rotor':
+                        ModalInteraction();
+                        break;
+                    case 'sync_machine':
+                        ModalInteraction();
+                        break;
+                    case 'sync_engine':
+                        ModalInteraction();
+                        break;
+                    case 'turbogenerator':
+                        ModalInteraction();
+                        break;
+                    case 'DC_engine':
+                        ModalInteraction();
+                        break;
+                    case 'DC_machine_inductor':
+                        ModalInteraction();
+                        break;
+                    case 'armature_of_the_DC_machine':
                         ModalInteraction();
                         break;
                 }
@@ -99,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         videoElement.id = 'player';
                         div.appendChild(videoElement);
                         videoElement.src = document.getElementById(modalID).getAttribute('name');
+                        videoElement.load();
                     }
                     else if (modalID.includes("_text")) {
                         console.log(modalID);
@@ -164,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let videoPlayer = document.getElementById('player');
                     console.log(videoPlayer);
                     if (videoPlayer != null) {
+                        videoPlayer.pause();
                         videoPlayer.src = "";
                     }
 

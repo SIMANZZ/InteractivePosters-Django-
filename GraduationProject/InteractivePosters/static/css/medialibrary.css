@@ -17,10 +17,10 @@ li{
     font-size: 40px;
     color: white;
     text-shadow:
-        -0.5px -0.5px 0 red,
-        0.5px -0.5px 0 red,
-        -0.5px 0.5px 0 red,
-        0.5px 0.5px 0 red;
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
 }
 
 a {
@@ -32,4 +32,58 @@ a {
 video {
     max-width: 100%;
     height: auto;
+}
+
+#search-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 20px rgba(0, 138, 37, 0.5);
+}
+
+#video-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 150px; /* Отступ для фиксации контейнера поиска */
+}
+
+#video-list li {
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+#video-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#video-list li a:hover {
+    background-color: #4CAF50;
 }
